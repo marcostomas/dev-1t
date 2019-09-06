@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rolê Top</title>
     <!--Favicon-->
-    <link href="img/logo_simbolo.png" rel="icon" type="image/x-icon" />
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
     <!--Importar fontes do Google-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
@@ -21,6 +21,10 @@
     <header>
         <nav>
             <div class="section-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo Rolê Top" title="Logo">
+                </div>
+
                 <ul>
                     <li id="bt-mobile-menu">
                         <!-- HTML para colocar os ícones do FA -->
@@ -34,15 +38,15 @@
                     </li>
 
                     <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="index.html#convites">Convites</a>
+                        <a onclick="toggleMobileMenu()" href="invites.html">Convites</a>
                     </li>
 
                     <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="index.html#proximoseventos">Próximos Eventos</a>
+                        <a onclick="toggleMobileMenu()" href="upcoming_events.html">Próximos Eventos</a>
                     </li>
 
                     <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="index.html#login">Login</a>
+                        <a onclick="toggleMobileMenu()" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -107,27 +111,50 @@
 
     <footer>
 
-        <div class="endereco">
-            <address>
-                Alameda Barão de Limeira, 539 - Campos Elíseos - SP
-                <br />
-                mcbonalds@email.com
-                <br />
-                11 3250 0000
-            </address>
-        </div>
-
-        <div class="facebook">
-            <a href="pt-br.facebook.com"><i class="fab fa-facebook-f"></i>/roletop</a>
-        </div>
-
-        <div class="instagram">
-                <a href="instagram.com"><i class="fab fa-instagram"></i></i>@roletop</a>
-        </div>
-        
-
-    </footer>
+            <div class="endereco">
+                <address>
+                    Alameda Barão de Limeira, 539 - Campos Elíseos - SP
+                    <br />
+                    mcbonalds@email.com
+                    <br />
+                    11 3250 0000
+                </address>
+            </div>
+    
+            <section id="social">
+                <div class="social_box">
+                    <div class="facebook">
+                        <a href="pt-br.facebook.com"><i class="fab fa-facebook-f"></i>/roletop</a>
+                    </div>
+    
+                    <div class="instagram">
+                        <a href="instagram.com"><i class="fab fa-instagram"></i></i>@roletop</a>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="mapa_site">
+                <div class="mapa_site_box">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+    
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+    
+                        <li>
+                            <a href="invites.html">Convites</a>
+                        </li>
+    
+                        <li>
+                            <a href="upcoming_events.html">Próximos Eventos</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
 
 </body>
-
 </html>
