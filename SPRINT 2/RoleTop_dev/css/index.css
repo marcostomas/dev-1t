@@ -1,8 +1,13 @@
 * {
     margin: 0%;
-    padding: 0%;
     background-color: #7D0093;
     color: #FFC600;
+}
+
+* h1 {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    padding: 1%;
 }
 
 body {
@@ -29,7 +34,7 @@ nav ul {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1.3em;
     list-style-type: none;
 }
@@ -40,7 +45,7 @@ nav ul > li {
 }
 
 nav ul > li > a {
-    padding: 0.4em;
+    padding: 0;
     display: block;
     text-decoration: none;
     color: #FFF;
@@ -52,19 +57,23 @@ nav ul > li > a:hover {
     color: #FFC600;
 }
 
-nav ul > li:last-child {
-    font-family: 'Comic Sans MS';
-    background-color: #FFC600;
-    color: #7D0093;
+.section-container {
+    margin: 0 auto;
+    max-width: 1360px;
 }
 
-.logo {
-    max-width: 100px;
+.section-container > a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.logo img {
-    width: 100%;
+.section-container img{
+ max-width: 10%;
+ text-align: center;
 }
+
 
 /*********************************************************
                     BANNER/AGENDAR EVENTO
@@ -76,7 +85,6 @@ nav ul > li:last-child {
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding: 1em;
 }
 
 #banner {
@@ -88,33 +96,48 @@ nav ul > li:last-child {
     width: 100%;
 }
 
-#banner .agendar_evento {
-    max-width: 42%;
+.agendar_evento {
+    max-width: 40%;
     background-color: #7D0093;
+    border: 1px solid #FFC600;
+    z-index: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.frase_efeito {
+    background-color: none;
+    text-align: left;
+    z-index: -1;
+    align-items: flex-start;
 }
 
 /*********************************************************
                             SERVIÇOS
 **********************************************************/
 
-#serviços {
-    border: #FFC600;
+.title_serviços {
+    border: 1px solid #FFC600;
 }
 
-#serviços .espaço {
+.info_box {
+    border: 1px solid #FFC600;
+}
+
+.flex-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.flex-group.box_serviços {
+    justify-content: space-evenly;
+    align-items: center;
+    color: #7D0093;
+    font-family: 'Comic Sans MS';
     
 }
-
-#serviços .espaço h4 {
-    padding: 20px;
-}
-
-#serviços .iluminaçao {
-
-}
-
-#serviços .ambientaçao {
-
 }
 
 /*********************************************************
@@ -125,10 +148,6 @@ nav ul > li:last-child {
     font-family: 'Segoe Script';
     text-align: center;
     padding: 30px;
-}
-
-h1 {
-    font-family: 'Comic Sans MS'
 }
 
 /*********************************************************
@@ -163,7 +182,7 @@ footer table .mapa_site {
 }
 
 @media (max-width: 1200px) {
-    #banner p {
+    #banner h2 a {
         font-size: 1.6em;
         font-weight: bold;
         padding-left: 2.5em;
@@ -172,7 +191,7 @@ footer table .mapa_site {
 }
 
 @media (max-width: 1000px) {
-    .food-section > div {
+    .content-section > div {
         margin: 0.5em;
         max-width: 45%;
     }
@@ -213,7 +232,7 @@ footer table .mapa_site {
 
 @media (max-width: 625px) {
 
-    #logo-area > img {
+    #banner > img {
         padding: 3em 0 0 0;
         width: 35%;
     }
@@ -243,7 +262,7 @@ footer table .mapa_site {
         flex-direction: column;
     }
 
-    #historia .flex-group {
+    #sobre .flex-group {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -251,14 +270,14 @@ footer table .mapa_site {
         vertical-align: top;
     }
 
-    #historia h2 {
+    #sobre p h2{
         margin: 0;
     }
 
 }
 
 @media (max-width: 485px) {
-    #banner p {
+    #banner {
         font-size: 0.55em;
     }
 }
