@@ -12,26 +12,25 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
     <!--Importar folha CSS-->
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/text-style.css" rel="stylesheet" type="text/css">
     <!-- Importar o Font Awesome para o projeto -->
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 
 <body>
-
     <header>
-        <section id="nav_bar">
+        <nav>
             <div class="logo_bar">
                 <a href="index.html">
                     <img src="img/logo.png">
                 </a>
-        </section>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="content-container">
         <h2>Convites</h2>
-        <form method="GET" action="admin.html">
+        <form method="GET" action="invite_sent.html">
 
             <div>
                 <label for="name">Seu Nome Completo</label>
@@ -54,15 +53,40 @@
     </main>
 
     <footer>
+        <table class="footer-container">
+            <thead>
+                <tr>
+                    <td colspan="3" class="endereço">
+                        <p>Alameda Barão de Limeira, 539</p>
+                        <p>Campos Elíseos - SP</p>
+                        <p>mcbonalds@email.com</p>
+                        <p>11 3250 0000</p>
+                    </td>
 
-            <div class="endereco">
-                <address>
-                    Alameda Barão de Limeira, 539 - Campos Elíseos - SP
-                    <br />
-                    mcbonalds@email.com
-                    <br />
-                    11 3250 0000
-                </address>
+                    <td colspan="3" class="social">
+                        <p><a href="https://pt-br.facebook.com"><i class="fab fa-facebook-f"></i>/roletop</a></p>
+                        <br />
+                        <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></i>@roletop</a></p>
+                    </td>
+
+                    <td colspan="3" class="mapa_site">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="invites.html">Convites</a></li>
+                            <li><a href="upcoming_events.html">Próximos Eventos</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+
+        <!--
+            <div id="endereço">
+                <p>Alameda Barão de Limeira, 539</p>
+                <p>Campos Elíseos - SP</p>
+                <p>mcbonalds@email.com</p>
+                <p>11 3250 0000</p>
             </div>
     
             <section id="social">
@@ -81,7 +105,7 @@
                 <div class="mapa_site_box">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
     
                         <li>
@@ -89,7 +113,7 @@
                         </li>
     
                         <li>
-                            <a href="#">Convites</a>
+                            <a href="invites.html">Convites</a>
                         </li>
     
                         <li>
@@ -98,7 +122,8 @@
                     </ul>
                 </div>
             </section>
-        </footer>
+        -->
+    </footer>
 
 </body>
 

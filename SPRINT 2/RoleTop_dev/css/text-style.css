@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #7D0093;
+    color: #FFC600;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+/**********************************************************
+                            NAV
+**********************************************************/
+nav {
+    width: 100%;
+    border-bottom: 3px solid #FFC600;
+}
+
+nav img {
+    text-align: center;
+    width: 10%;
+    padding: 2%;
+}
+
+/**********************************************************
+                        CONTAINERS
+**********************************************************/
+
+
+
+.text-container {
+   padding: 15% 5% 5% 5%;
+    align-items: center;
+}
+
+.content-container {
+    align-items: center;
+}
+
+.footer-container {
+    width: 100;
+}
+
+.footer-container .endereço {
+
+}
+
+.footer-container .social {
+
+}
+
+.footer-container .mapa_site {
+
+}
