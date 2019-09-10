@@ -116,29 +116,42 @@ nav ul > li > a:hover {
                             SERVIÇOS
 **********************************************************/
 
-.title_serviços {
+/* .title_serviços {
     border: 1px solid #FFC600;
 }
 
 .info_box {
     border: 1px solid #FFC600;
-}
+} */
 
-.flex-group {
+/* .flex-group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
-
-.flex-group.box_serviços {
+.flex-group .box_serviços {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #FFC600;
     justify-content: space-evenly;
     align-items: center;
     color: #7D0093;
     font-family: 'Comic Sans MS';
+    margin: 1.5px;
+    max-width: 100%;
+}
+
+.flex-group .box_serviços img{
+    border: 1px solid #FFC600;
+    max-width: 100%;
     
 }
-}
+/* .serviços_image {
+    border: 1px solid #FFC600;
+    max-width: 100%;
+} */
 
 /*********************************************************
                             SOBRE
@@ -148,6 +161,10 @@ nav ul > li > a:hover {
     font-family: 'Segoe Script';
     text-align: center;
     padding: 30px;
+}
+
+#sobre .section-container {
+    font-size: 25px;
 }
 
 /*********************************************************

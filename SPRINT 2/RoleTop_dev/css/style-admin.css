@@ -1,0 +1,136 @@
+* {
+    font-family: 'Comic Sans MS';
+}
+
+body {
+    background-color: #7D0093;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+}
+
+header {
+    color: #FFC600;
+    text-align: justify;
+}
+
+#painel {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #FFC600;
+}
+
+h3 {
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    color: #FFC600;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: 'Comic Sans MS';
+}
+
+.box-status-pedidos {
+    width: 30%;
+    padding-top: .5em;
+    text-align: center;
+}
+.box-status-pedidos > p {
+    font-size: 2em;
+    padding: 0.5em 0 0 0;
+}
+
+.box-status-pedidos.reprovados {
+    background-color: #a70000;
+}
+
+.box-status-pedidos.aprovados {
+    background-color: #669100;
+}
+
+.box-status-pedidos.pendentes {
+    background-color: #FFC600;
+}
+
+table {
+    text-align: center;
+    color: #7D0093;
+    border: 1px dashed #FFC600;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color:#FFC600;
+}
+
+table tbody{
+    color: #FFC600;
+}
+
+table a {
+    text-decoration: none;
+    color: #FFC600;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    text-align: center;
+    background-color: #FFC600;
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+footer {
+    color: #FFC600;
+    font-weight: 400;
+    font-size: 21px;
+    z-index: 0;
+}
+
+footer table {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+footer table .endereço {
+    width: 33.3%;
+    text-align: justify;
+    justify-content: center;
+    color: #FFC600;
+}
+
+footer table .social {
+    width: 33.3%;
+}
+
+footer table .mapa_site {
+    width: 33.3%;
+    text-align: justify;
+}
+
+@media (max-width: 625px) {
+    main {
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+
+}

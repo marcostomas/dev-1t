@@ -12,141 +12,117 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
     <!--Importar folha CSS-->
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/style-admin.css" rel="stylesheet" type="text/css">
     <!-- Importar o Font Awesome para o projeto -->
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 
 <body>
     <header>
-        Logado como:
-        <br />
-        <br />
-        Administrador
+        <div class="header_ua">
+            Logado como:
+            <br />
+            <br />
+            <b><i>Administrador</i></b>
+        </div>
     </header>
 
     <main>
-        <div id="eventos pendentes">
-            <h2>Eventos Pendentes</h2>
+        <h2>Dashboard</h2>
 
-            <div class="adele_pendente">
-                <i class="fas fa-music"></i>
-                <p>Adele - 22/08/19 - 19:45 às 01:45</p>
-                <div class="aceitar" title="Aceitar"><a href="accepted.html"><i class="fas fa-check"></i></a></div>
-                <div class="recusar" title="Recusar"><a href="declined.html"><i class="fas fa-times"></i></a></div>
-            </div>
-
-            <br />
-
-            <div class="gabriel_thais_pendente">
-                <i class="fas fa-ring"></i>
-                <p>Gabriel & Thais - 23/08/19 - 20:00 às 00:00</p>
-
-                <div class="aceitar">
-                    <a href="accepted.html"><i class="fas fa-check"></i></a>
+        <section id="status-pedidos">
+            <h3>Status dos pedidos</h3>
+            <div id="painel">
+                <div class="box-status-pedidos aprovados">
+                    <h4>Aprovados</h4>
+                    <p>3</p>
                 </div>
-
-                <div class="recusar">
-                    <a href="declined.html"><i class="fas fa-times"></i></a>
+                <div class="box-status-pedidos pendentes">
+                    <h4>Pendentes</h4>
+                    <p>3</p>
+                </div>
+                <div class="box-status-pedidos reprovados">
+                    <h4>Reprovados</h4>
+                    <p>3</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="eventos futuros">
-            <h2>Eventos Futuros</h2>
+        <section id="lista-pedidos">
+            <h3>Lista de pedidos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Nome</th>
+                        <th rowspan="2">E-mail</th>
+                        <th colspan="2">Serviço</th>
+                        <th colspan="2" rowspan="2">Aprovar</th>
+                    </tr>
+                    <tr>
+                        <th>Som</th>
+                        <th>Luz</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <p>Pedidos atualizados em 11/09/2019 às 9:00</p>
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Cesar Sportore</td>
+                        <td>cesar.felipe@email.com</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></a></td>
+                        <td><a href="#"><i class="fas fa-check"></i></a></td>
+                        <td><a href="#"><i class="fas fa-times"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Alexandre Fukaya</td>
+                        <td>alexandre.fukaya@email.com</td>
+                        <td><i class="fas fa-check"></i></a></td>
+                        <td><i class="fas fa-check"></i></a></td>
+                        <td><a href="#"><i class="fas fa-check"></i></a></td>
+                        <td><a href="#"><i class="fas fa-times"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-            <div class="vinicius_baldonardo">
-                <i class="fas fa-beer"></i>
-                <p>Vinicius Baldonardo - 15/09/19 - 22:00 às 04:00</p>
-            </div>
-
-            <br />
-
-            <div class="matheus_kauan">
-                <i class="fas fa-music"></i>
-                <p>Matheus & Kauan - 20/09/19 - 19:00 às 00:00</p>
-            </div>
-
-
-        </div>
-
-        <div id="eventos recusados">
-            <h2>Eventos Recusados</h2>
-
-            <div class="mc_doni">
-                <i class="fas fa-music"></i>
-                <p>MC Doni - 08/09/19 - 23:00 às 05:30</p>
-            </div>
-
-            <br />
-            
-            <div class="mc_aline">
-                <i class="fas fa-music"></i>
-                <p>MC Aline Ruiva - 00:00 às 06:00</p>
-            </div>            
-        </div>
-
-        <div id="eventos recentes">
-            <h2>Eventos Recentes</h2>
-                
-            <div class="thiago_isabella">
-                <i class="fas fa-ring"></i>
-                <p>Thiago & Isabella - 25/08/19 - 22:00 às 01:00</p>
-            </div>   
-               
-            <br />
-                
-            <div class="antonio_maria">
-                    <i class="fas fa-ring"></i>
-                    <p>Antônio & Maria - 01/09/19 - 22:00 às 01:00</p>
-            </div>        
-        </div>
     </main>
 
     <footer>
-        <div id="endereco">
-            <address>
-                Alameda Barão de Limeira, 539 - Campos Elíseos - SP
-                <br />
-                mcbonalds@email.com
-                <br />
-                11 3250 0000
-            </address>
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="3" class="endereço">
+                        <p>Alameda Barão de Limeira, 539</p>
+                        <p>Campos Elíseos - SP</p>
+                        <p>mcbonalds@email.com</p>
+                        <p>11 3250 0000</p>
+                    </td>
 
-        <section id="social">
-            <div class="social_box">
-                <div class="facebook">
-                    <a href="https://pt-br.facebook.com"><i class="fab fa-facebook-f"></i>/roletop</a>
-                </div>
+                    <td colspan="3" class="social">
+                        <p><a href="https://pt-br.facebook.com"><i class="fab fa-facebook-f"></i>/roletop</a></p>
+                        <br />
+                        <p><a href="https://instagram.com"><i class="fab fa-instagram"></i></i>@roletop</a></p>
+                    </td>
 
-                <div class="instagram">
-                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></i>@roletop</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="mapa_site">
-            <div class="mapa_site_box">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="invites.html">Convites</a>
-                    </li>
-
-                    <li>
-                        <a href="upcoming_events.html">Próximos Eventos</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                    <td colspan="3" class="mapa_site">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="invites.html">Convites</a></li>
+                            <li><a href="upcoming_events.html">Próximos Eventos</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </thead>
+        </table>
     </footer>
 </body>
 
