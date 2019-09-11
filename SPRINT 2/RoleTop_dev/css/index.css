@@ -41,7 +41,7 @@ nav ul {
 
 nav ul > li {
     width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 
 nav ul > li > a {
@@ -63,7 +63,7 @@ nav ul > li > a:hover {
 }
 
 .section-container > a {
-    display: block;
+    display: flex;
     padding: 20px 0;
     text-decoration: none;
     font-weight: bold;
@@ -79,37 +79,9 @@ nav ul > li > a:hover {
                     BANNER/AGENDAR EVENTO
 **********************************************************/
 
-#banner {
-    background-image: url(../img/fachada.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.phrase {
     text-align: center;
-}
-
-#banner {
-    max-width: 1920px;
-}
-
-
-#banner img {
-    width: 100%;
-}
-
-.agendar_evento {
-    max-width: 40%;
-    background-color: #7D0093;
-    border: 1px solid #FFC600;
-    z-index: 0;
-    justify-content: center;
-    text-align: center;
-}
-
-.frase_efeito {
-    background-color: none;
-    text-align: left;
-    z-index: -1;
-    align-items: flex-start;
+    font-size: 20px;
 }
 
 /*********************************************************
@@ -130,7 +102,7 @@ nav ul > li > a:hover {
     flex-wrap: wrap;
 } */
 
-.flex-group .box_serviços {
+.flex-group.box_serviços {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -146,8 +118,15 @@ nav ul > li > a:hover {
 .flex-group .box_serviços img{
     border: 1px solid #FFC600;
     max-width: 100%;
+    text-align: center;
     
 }
+
+.info_box {
+    text-align: center;
+    font-size: 15px;
+}
+
 /* .serviços_image {
     border: 1px solid #FFC600;
     max-width: 100%;
@@ -208,25 +187,19 @@ footer table .mapa_site {
 }
 
 @media (max-width: 1000px) {
-    .content-section > div {
+    ..box_serviços > div {
         margin: 0.5em;
         max-width: 45%;
     }
 
     .flex-group > div > p:nth-child(odd) {
-        font-weight: bold;
         line-height: 0.5em;
         font-size: 1em;
      }
      
-     .flex-group > div > p:nth-child(even) {
-        font-weight: bold;
+    .flex-group> div > p:nth-child(even) {
         font-size: 2.5em;
         margin-top: -0.5em;
-        text-shadow: -3px -3px 0 #ff9933,
-                      3px -3px 0 #ff9933,
-                     -3px  3px 0 #ff9933,
-                      3px  3px 0 #ff9933;
      }
 
      #banner p {
@@ -292,6 +265,17 @@ footer table .mapa_site {
     }
 
 }
+
+@media (max-width: 540px){
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
 
 @media (max-width: 485px) {
     #banner {
