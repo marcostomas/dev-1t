@@ -1,0 +1,11 @@
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.AssemblyInfo.cs
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\bin\Debug\netcoreapp2.2\Aumento.deps.json
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\bin\Debug\netcoreapp2.2\Aumento.runtimeconfig.json
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\bin\Debug\netcoreapp2.2\Aumento.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\bin\Debug\netcoreapp2.2\Aumento.dll
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\bin\Debug\netcoreapp2.2\Aumento.pdb
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.dll
+C:\Users\44036901818\Documents\SPRINT 3\Aumento\obj\Debug\netcoreapp2.2\Aumento.pdb
