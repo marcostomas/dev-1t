@@ -1,0 +1,22 @@
+C:\Users\44036901818\Documents\SPRINT 3\Números\bin\Debug\netcoreapp2.2\Números.deps.json
+C:\Users\44036901818\Documents\SPRINT 3\Números\bin\Debug\netcoreapp2.2\Números.runtimeconfig.json
+C:\Users\44036901818\Documents\SPRINT 3\Números\bin\Debug\netcoreapp2.2\Números.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\SPRINT 3\Números\bin\Debug\netcoreapp2.2\Números.dll
+C:\Users\44036901818\Documents\SPRINT 3\Números\bin\Debug\netcoreapp2.2\Números.pdb
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.AssemblyInfo.cs
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.dll
+C:\Users\44036901818\Documents\SPRINT 3\Números\obj\Debug\netcoreapp2.2\Números.pdb
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.AssemblyInfo.cs
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.dll
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\obj\Debug\netcoreapp2.2\Números.pdb
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\bin\Debug\netcoreapp2.2\Números.deps.json
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\bin\Debug\netcoreapp2.2\Números.runtimeconfig.json
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\bin\Debug\netcoreapp2.2\Números.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\bin\Debug\netcoreapp2.2\Números.dll
+C:\Users\44036901818\Documents\1º Termo\SPRINT 3\C#\Números\bin\Debug\netcoreapp2.2\Números.pdb
