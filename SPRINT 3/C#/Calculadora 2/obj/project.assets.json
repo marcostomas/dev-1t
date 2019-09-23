@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\Calculadora 2\\Calculadora 2.csproj",
+      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\Calculadora 2\\Calculadora 2.csproj",
       "projectName": "Calculadora 2",
-      "projectPath": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\Calculadora 2\\Calculadora 2.csproj",
+      "projectPath": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\Calculadora 2\\Calculadora 2.csproj",
       "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\Calculadora 2\\obj\\",
+      "outputPath": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\Calculadora 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,4 @@
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\Formas\obj\Debug\netcoreapp2.2\Formas.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\Formas\obj\Debug\netcoreapp2.2\Formas.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\Formas\obj\Debug\netcoreapp2.2\Formas.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\Formas\obj\Debug\netcoreapp2.2\Formas.AssemblyInfo.cs

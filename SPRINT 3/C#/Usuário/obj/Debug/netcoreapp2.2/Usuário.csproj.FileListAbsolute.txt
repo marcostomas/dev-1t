@@ -1,0 +1,11 @@
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.AssemblyInfo.cs
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\bin\Debug\netcoreapp2.2\Usuário.deps.json
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\bin\Debug\netcoreapp2.2\Usuário.runtimeconfig.json
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\bin\Debug\netcoreapp2.2\Usuário.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\bin\Debug\netcoreapp2.2\Usuário.dll
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\bin\Debug\netcoreapp2.2\Usuário.pdb
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.dll
+C:\Users\44036901818\Documents\dev-1t\SPRINT 3\C#\usuário\obj\Debug\netcoreapp2.2\Usuário.pdb
