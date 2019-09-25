@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\tabuada\\tabuada.csproj",
+      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tabuada\\tabuada.csproj",
       "projectName": "tabuada",
-      "projectPath": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\tabuada\\tabuada.csproj",
+      "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tabuada\\tabuada.csproj",
       "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44036901818\\Documents\\dev-1t\\SPRINT 3\\C#\\tabuada\\obj\\",
+      "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tabuada\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

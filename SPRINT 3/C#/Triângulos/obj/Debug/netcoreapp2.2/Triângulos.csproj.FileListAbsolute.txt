@@ -1,0 +1,11 @@
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.AssemblyInfo.cs
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\bin\Debug\netcoreapp2.2\Triângulos.deps.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\bin\Debug\netcoreapp2.2\Triângulos.runtimeconfig.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\bin\Debug\netcoreapp2.2\Triângulos.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\bin\Debug\netcoreapp2.2\Triângulos.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\bin\Debug\netcoreapp2.2\Triângulos.pdb
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\Triângulos\obj\Debug\netcoreapp2.2\Triângulos.pdb
