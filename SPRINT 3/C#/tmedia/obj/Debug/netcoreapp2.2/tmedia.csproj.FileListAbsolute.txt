@@ -1,0 +1,11 @@
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.AssemblyInfo.cs
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\bin\Debug\netcoreapp2.2\tmedia.deps.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\bin\Debug\netcoreapp2.2\tmedia.runtimeconfig.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\bin\Debug\netcoreapp2.2\tmedia.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\bin\Debug\netcoreapp2.2\tmedia.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\bin\Debug\netcoreapp2.2\tmedia.pdb
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\tmedia\obj\Debug\netcoreapp2.2\tmedia.pdb

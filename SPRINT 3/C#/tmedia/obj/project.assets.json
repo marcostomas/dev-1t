@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\TempMedia\\TempMedia.csproj",
-      "projectName": "TempMedia",
-      "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\TempMedia\\TempMedia.csproj",
+      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tmedia\\tmedia.csproj",
+      "projectName": "tmedia",
+      "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tmedia\\tmedia.csproj",
       "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\TempMedia\\obj\\",
+      "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\tmedia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
