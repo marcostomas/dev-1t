@@ -9,3 +9,14 @@ C:\Users\44036901818\Documents\SPRINT 3\ConvAge\bin\Debug\netcoreapp2.2\ConvAge.
 C:\Users\44036901818\Documents\SPRINT 3\ConvAge\bin\Debug\netcoreapp2.2\ConvAge.pdb
 C:\Users\44036901818\Documents\SPRINT 3\ConvAge\obj\Debug\netcoreapp2.2\ConvAge.dll
 C:\Users\44036901818\Documents\SPRINT 3\ConvAge\obj\Debug\netcoreapp2.2\ConvAge.pdb
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\bin\Debug\netcoreapp2.2\ConvAge.deps.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\bin\Debug\netcoreapp2.2\ConvAge.runtimeconfig.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\bin\Debug\netcoreapp2.2\ConvAge.runtimeconfig.dev.json
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\bin\Debug\netcoreapp2.2\ConvAge.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\bin\Debug\netcoreapp2.2\ConvAge.pdb
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.AssemblyInfo.cs
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.dll
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\convage\obj\Debug\netcoreapp2.2\ConvAge.pdb

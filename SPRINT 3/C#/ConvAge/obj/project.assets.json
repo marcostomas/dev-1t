@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\ConvAge\\ConvAge.csproj",
+      "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\convage\\ConvAge.csproj",
       "projectName": "ConvAge",
-      "projectPath": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\ConvAge\\ConvAge.csproj",
+      "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\convage\\ConvAge.csproj",
       "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44036901818\\Documents\\SPRINT 3\\ConvAge\\obj\\",
+      "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\convage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

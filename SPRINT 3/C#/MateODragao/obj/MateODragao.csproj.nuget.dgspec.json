@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\MateODragao\\MateODragao.csproj": {}
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\mateodragao\\MateODragao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\MateODragao\\MateODragao.csproj": {
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\mateodragao\\MateODragao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\MateODragao\\MateODragao.csproj",
+        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\mateodragao\\MateODragao.csproj",
         "projectName": "MateODragao",
-        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\MateODragao\\MateODragao.csproj",
+        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\mateodragao\\MateODragao.csproj",
         "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\MateODragao\\obj\\",
+        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\mateodragao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
