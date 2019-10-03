@@ -3,10 +3,10 @@ using System;
 namespace DadosCliente {
     public class Cliente{
 
-        public string Nome 
-        public string Email
-        public string Cpf
-        public string Senha
+        public string Nome;
+        public string Email;
+        public string Cpf;
+        public string Senha;
 
         public Cliente (string Nome, string Cpf, string Email) {
 
@@ -16,7 +16,7 @@ namespace DadosCliente {
         }
 
         public bool TrocaSenha(string senha){
-            if((senha > 6) && (senha.Length < 16)){
+            if((senha.Length > 6) && (senha.Length < 16)){
                 this.Senha = senha;
                 return true;
             }
