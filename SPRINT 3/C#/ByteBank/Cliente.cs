@@ -7,7 +7,6 @@ namespace DadosCliente {
         public string Email;
         public string Cpf;
         public string Senha;
-
         public Cliente (string Nome, string Cpf, string Email) {
 
             this.Nome = Nome;
