@@ -39,6 +39,7 @@ namespace ToDoList {
                         break;
                     case 3:
                         Console.WriteLine("Tchau!");
+                        SaveList(todoList,@filePath);
                         break;
                     default: 
                         Console.WriteLine("Opção Inválida");
@@ -54,7 +55,6 @@ namespace ToDoList {
 
             try {
                 string[] todoFile = File.ReadAllLines (@filePath);
-
                 foreach (string line in todoFile) {
                     string[] itens = line.Split (",");
                     string titulo = itens[0].Replace ("\"", "");
@@ -121,6 +121,37 @@ namespace ToDoList {
                     todoList.RemoveAt(index);
                 }
             }while(true);
+        }
+
+        static void SaveList(List <ToDoItem> lista,string path){
+            List<string>linhas = new List<string>();
+
+            foreach(ToDoItem item in lista){
+                string titulo = "\"" + item.Titulo + "\"";
+                string nota = "\"" + item.Nota + "\"";
+                linhas.Add (titulo + "," + nota);
+
+            }
+
+            string tryAgain = "";
+
+            do{
+               try{
+                   File.WriteAllLines (@path, linhas);
+                   tryAgain = "n";
+               } catch (IOException e){
+                   System.Console.WriteLine("Erro Na Leitura do Arquivo");
+                   System.Console.WriteLine(e.Message);
+                   do{
+                       System.Console.WriteLine("Deseja Tentar Novamente (S/N)?");
+                       tryAgain = Console.ReadLine().ToLower ();
+
+                       if ((tryAgain != "n") || (tryAgain != "s" )){
+                           System.Console.WriteLine("Opção Inválida");
+                       }
+                   }while((tryAgain == "s") || (tryAgain == "n"));
+               }
+            }while(tryAgain != "n");
         }
     }
 }

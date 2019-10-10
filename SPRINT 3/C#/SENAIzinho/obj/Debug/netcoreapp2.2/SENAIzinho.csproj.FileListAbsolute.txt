@@ -1,0 +1,4 @@
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\SENAIzinho\obj\Debug\netcoreapp2.2\SENAIzinho.csprojAssemblyReference.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\SENAIzinho\obj\Debug\netcoreapp2.2\SENAIzinho.csproj.CoreCompileInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\SENAIzinho\obj\Debug\netcoreapp2.2\SENAIzinho.AssemblyInfoInputs.cache
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 3\C#\SENAIzinho\obj\Debug\netcoreapp2.2\SENAIzinho.AssemblyInfo.cs
