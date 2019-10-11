@@ -78,8 +78,8 @@ namespace ByteBank {
             } while (!saldoOk);
 
             ContaCorrenteclass contaCorrente = new ContaCorrenteclass (agencia, conta, cliente1 );
-            contaCorrente.Saldo = saldo;
-
+            saldo = contaCorrente.Deposito (saldo);
+            contaCorrente.Saque(saldo);
             /*
                 !DEPÓSITO
             */
@@ -91,7 +91,7 @@ namespace ByteBank {
             Cliente usuario = contaCorrente.Titular;
             System.Console.WriteLine($"Bem-Vindo {usuario.Nome}");
             System.Console.WriteLine($"Agencia: {contaCorrente.Agencia} / Conta: {contaCorrente.Numero}");
-            System.Console.WriteLine($"Saldo: {contaCorrente.Saldo}");
+            System.Console.WriteLine($"Saldo: {contaCorrente.saldo}");
             System.Console.WriteLine("Digite o valor do depósito: R$ ");
             double valor = double.Parse(Console.ReadLine());
             contaCorrente.Deposito(valor);
@@ -107,7 +107,7 @@ namespace ByteBank {
 
             System.Console.WriteLine($"Bem-Vindo {usuario.Nome}");
             System.Console.WriteLine($"Agência {contaCorrente.Agencia}");
-            System.Console.WriteLine($"Saldo: R$ {contaCorrente.Saldo}");
+            System.Console.WriteLine($"Saldo: R$ {contaCorrente.saldo}");
             System.Console.WriteLine("Valor de saque: R$ ");
             double saque =double.Parse(Console.ReadLine());
             if(contaCorrente.Saque(valor)){
@@ -115,21 +115,21 @@ namespace ByteBank {
             }else{
                 System.Console.WriteLine("Operação Não Realizada [erro 00001]");
             }
-            System.Console.WriteLine($"Saldo Altual: R$ {contaCorrente.Saldo}");
+            System.Console.WriteLine($"Saldo Altual: R$ {contaCorrente.saldo}");
             
             /*
             !TRASFERÊNCIA
             */
 
             Cliente cliente2 = new Cliente("Marcos","546.789.123-00","m@t.com");
-            ContaCorrenteclass contaCorrente2 = new ContaCorrenteclass("1111","2222",cliente2);
+            ContaCorrenteclass contaCorrente2 = new ContaCorrenteclass(1111,2222,cliente2);
             System.Console.WriteLine ("=============================");
             System.Console.WriteLine ("  ByteBank - TRANSFRÊNCIA");
             System.Console.WriteLine ("=============================");
             System.Console.WriteLine($"Bem-Vindo {usuario.Nome}");
             System.Console.WriteLine($"Agência {contaCorrente.Agencia}");
-            System.Console.WriteLine($"Saldo Origem: R$ {contaCorrente.Saldo}");
-            System.Console.WriteLine($"Saldo Destino: R$ {contaCorrente2.Saldo}");
+            System.Console.WriteLine($"Saldo Origem: R$ {contaCorrente.saldo}");
+            System.Console.WriteLine($"Saldo Destino: R$ {contaCorrente2.saldo}");
             System.Console.WriteLine("Valor à ser transferido: R$ ");
             valor = double.Parse(Console.ReadLine());
 

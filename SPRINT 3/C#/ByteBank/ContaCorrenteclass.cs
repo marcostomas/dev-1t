@@ -6,7 +6,11 @@ namespace DadosTitular {
         public DadosCliente.Cliente Titular { get; set; }
         public int Agencia { get; set; }
         public int Numero { get; set; }
-        public double Saldo { get; set; }
+        private double Saldo { get; set; }
+
+        public double saldo {
+            get {return Saldo; }
+        }
 
         public ContaCorrenteclass (int Agencia, int Numero, DadosCliente.Cliente Titular) {
 
@@ -17,21 +21,21 @@ namespace DadosTitular {
         }
         public double Deposito (double valor) {
             this.Saldo += valor;
-            return this.Saldo;
+            return this.saldo;
         }
         public bool Saque (double valor) {
-            if (valor < this.Saldo) {
+            if (valor <= this.saldo) {
                 this.Saldo -= valor;
                 return true;
             } else {
                 return false;
             }
         }
-        public bool Transferencia(ContaCorrenteclass destino, double valor){
-            if (Saque(valor)){
-                destino.Deposito(valor);
+        public bool Transferencia (ContaCorrenteclass destino, double valor) {
+            if (Saque (valor)) {
+                destino.Deposito (valor);
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }

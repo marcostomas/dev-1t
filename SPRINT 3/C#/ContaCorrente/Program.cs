@@ -12,12 +12,12 @@ namespace ContaCorrente {
             string titular = Console.ReadLine ();
 
             System.Console.Write ("Número da Agência: ");
-            string agencia = Console.ReadLine ();
+            string agencia = int.Parse(Console.ReadLine ());
 
             System.Console.Write ("Número da Conta: ");
             string numero = Console.ReadLine ();
 
-            ContaCorrente cliente1 = new ContaCorrente (titular, agencia, numero);
+            DadosTitular.ContaCorrente cliente1 = new DadosTitular.ContaCorrente(titular, agencia, numero);
 
             bool saldoOk = false;
 

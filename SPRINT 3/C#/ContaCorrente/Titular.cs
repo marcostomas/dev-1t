@@ -8,7 +8,7 @@ public class ContaCorrente {
         public int Numero { get; set; }
         public double Saldo { get; set; }
 
-    public ContaCorrenteclass (int Agencia, int Numero, string Titular) {
+    public ContaCorrente (int Agencia, int Numero, string Titular) {
 
             this.Agencia = Agencia;
             this.Numero = Numero;
