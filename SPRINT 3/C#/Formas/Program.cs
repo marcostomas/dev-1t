@@ -11,7 +11,7 @@ namespace Formas {
             float num4 = 0;
             float resultado1 = 0;
             string resposta;
-            float num5 = 
+            float num5 =;
 
             Console.WriteLine ("==================");
             Console.WriteLine ("1 - Quadrado");
