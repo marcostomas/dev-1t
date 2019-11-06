@@ -1,5 +1,6 @@
 ﻿/**
  * Existe um erro na adição dos instrumentos musicais que pode levar a um loop infinito.
+ * Já Corrigido
  */
 
 using System;
@@ -136,10 +137,11 @@ namespace EscolaDeRock
                             else
                             {
                                 Console.WriteLine("O instrumento selecionado não é de Harmonia.");
+                                vagas = 2;
                                 continue;
                             }
 
-                            Console.Write($"Digite código do instrumento de Percussao: ");
+                            Console.Write($"Digite código do instrumento de Percussão: ");
                             codigo = int.Parse(Console.ReadLine());
                             instrumento = Deposito.Instrumentos[codigo];
                             interfaceEncontrada = instrumento.GetType().GetInterface("IPercussao");

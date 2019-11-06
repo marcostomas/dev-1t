@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\EscolaDeRock",
     "\\EscolaRock",
     "\\EscolaRock\\Models"
   ],
-  "SelectedNode": "\\Faixa Etária",
+  "SelectedNode": "\\EscolaDeRock\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

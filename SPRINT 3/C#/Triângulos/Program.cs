@@ -10,8 +10,7 @@ namespace Triângulos {
             Console.WriteLine ("Digite a altura do triãngulo");
             int h = int.Parse (Console.ReadLine ());
 
-            Console.WriteLine ("Digite a quatidade de triângulos");
-            int n = int.Parse (Console.ReadLine ());
+            int n = 1;
 
             for (int i = 0; i < n; i++) {
                 string estrelas = "";

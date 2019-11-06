@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\Reciclagem\\Reciclagem.csproj": {}
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\reciclagem\\Reciclagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\Reciclagem\\Reciclagem.csproj": {
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\reciclagem\\Reciclagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\Reciclagem\\Reciclagem.csproj",
+        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\reciclagem\\Reciclagem.csproj",
         "projectName": "Reciclagem",
-        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\Reciclagem\\Reciclagem.csproj",
+        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\reciclagem\\Reciclagem.csproj",
         "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\Reciclagem\\obj\\",
+        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 3\\C#\\reciclagem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
