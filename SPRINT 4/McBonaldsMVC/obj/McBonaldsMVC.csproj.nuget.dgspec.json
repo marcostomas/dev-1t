@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
   },
   "projects": {
-    "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
         "projectName": "McBonaldsMVC",
-        "projectPath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
         "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\obj\\",
+        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
