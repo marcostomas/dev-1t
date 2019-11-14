@@ -32,3 +32,4 @@ C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 4\McBonaldsMVC\obj\Debug\
 C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 4\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
 C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 4\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
 C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 4\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\44036901818\Documents\1º Termo\dev-1t\SPRINT 4\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Index.g.cshtml.cs

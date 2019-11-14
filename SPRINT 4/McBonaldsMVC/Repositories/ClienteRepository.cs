@@ -5,6 +5,7 @@ namespace McBonaldsMVC.Repositories
 {
     public class ClienteRepository
     {
+        // É private porque só será usado nesta classe, pertencente a este repositório
         private const string PATH = "Database/Cliente.csv";
 
         // Verifica se o arquivo exite
@@ -12,7 +13,7 @@ namespace McBonaldsMVC.Repositories
         {
             if (!File.Exists(PATH))
             {
-                File.Create(PATH).Close(); //Cria/sobreescreve um arquivo, escreve nele e fecha-o
+                File.Create(PATH).Close(); // Cria/sobreescreve um arquivo, escreve nele e fecha-o
             }
         }   
         public bool Inserir (Cliente cliente)

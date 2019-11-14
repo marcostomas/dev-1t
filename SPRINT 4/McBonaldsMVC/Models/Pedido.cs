@@ -9,6 +9,22 @@ namespace McBonaldsMVC.Models
         public Shake Shake {get; set;}
         public DateTime DataDoPedido {get; set;}
         public double PrecoTotal {get; set;}
+
+        /*
+        public Pedido()
+        {
+
+        }
+        
+        public Pedido(Cliente cliente, Hamburguer hamburguer, Shake shake , DateTime dataPedido, double precoTotal)
+        {
+            this.Cliente = cliente;
+            this.Hamburguer = hamburguer;
+            this.Shake = shake;
+            this.DataDoPedido = dataPedido;
+            this.PrecoTotal = precoTotal;
+        }
+        */
         
     }
 }
