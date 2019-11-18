@@ -13,28 +13,28 @@ namespace McBonaldsMVC.Controllers
         {
             return View();
         }
-        public IActionResult CadastrarCliente(IFormCollection form)
+
+        public IActionResult CadastrarCliente (IFormCollection form)
         {
             ViewData["Action"] = "Cadastro";
-
+            
             try{
             Cliente cliente = new Cliente(
                 form["nome"],
-                form["email"],
                 form["endereco"],
                 form["telefone"],
-                form ["senha"],
+                form["senha"],
+                form["email"],
                 DateTime.Parse(form["data-nascimento"]));
-
+                
                 clienteRepositorio.Inserir(cliente);
 
-                return View("Sucesso");
-            
-            }catch(Exception e){
+            return View("Sucesso");
+
+            } catch(Exception e)
+            {
                 return View("Erro");
             }
-            //Semelhante à parte superior:
-            // System.Console.WriteLine(form["nome"]); 
         }
     }
 }

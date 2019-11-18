@@ -14,11 +14,7 @@ namespace McBonaldsMVC.Controllers
         {
             ViewData["NomeView"] = "Home";
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        }   
+        
     }
 }

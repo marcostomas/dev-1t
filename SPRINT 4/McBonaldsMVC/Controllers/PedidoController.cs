@@ -1,6 +1,7 @@
 using System;
 using McBonaldsMVC.Models;
 using McBonaldsMVC.Repositories;
+using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,40 +9,50 @@ namespace McBonaldsMVC.Controllers
 {
     public class PedidoController : Controller
     {
-        PedidoRepository pedidoRepository =  new PedidoRepository();
+        PedidoRepository pedidoRepository = new PedidoRepository();
         HamburguerRepository hamburguerRepository = new HamburguerRepository();
+        ShakeRepository shakeRepository = new ShakeRepository();
+
         public IActionResult Index()
         {
-            var hamburgures = hamburguerRepository.ObterTodos()
-            return View();
+            var hamburgueres = hamburguerRepository.ObterTodos();
+
+            PedidoViewModel pedido = new PedidoViewModel();
+            pedido.Hamburgueres = hamburgueres;
+
+            var shakes = shakeRepository.ObterTodos();
+
+            PedidoViewModel pedido1 = new PedidoViewModel();
+            pedido.Shakes = shakes;
+            
+            return View(pedido);
         }
 
-        public IActionResult Registrar (IFormCollection form)
-        {   
-            // Construtor Vazio
+        public IActionResult Registrar(IFormCollection form)
+        {
             Pedido pedido = new Pedido();
-            // Construtor Vazio e depois adiciona-se suas características
-            Shake shake = new Shake();
-            shake.Nome = form["shake"];
+            
+            Shake shake = new Shake(form["shake"], shakeRepository.ObterPrecoDe(form["shake"]));
 
-            // Contrutor c/ suas características já definidas ao iniciá-lo
-            Hamburguer hamburguer = new Hamburguer(form["hamburguer"], 0.0);
+            pedido.Shake = shake;
+
+            Hamburguer hamburguer = new Hamburguer(form["hamburguer"], hamburguerRepository.ObterPrecoDe(form["hamburguer"]));
+
             pedido.Hamburguer = hamburguer;
 
-            // Construtor c/ suas características definidas dentro de seu próprio escopo
-            Cliente cliente = new Cliente ()
+            Cliente cliente = new Cliente()
             {
                 Nome = form["nome"],
                 Endereco = form["endereco"],
-                Email = form["email"],
-                Telefone = form["telefone"]
+                Telefone = form["telefone"],
+                Email = form["email"]
             };
 
             pedido.Cliente = cliente;
 
             pedido.DataDoPedido = DateTime.Now;
 
-            pedido.PrecoTotal = 0.0;
+            pedido.PrecoTotal = pedido.Hamburguer.Preco + pedido.Shake.Preco;
 
             pedidoRepository.Inserir(pedido);
 
