@@ -1,0 +1,61 @@
+@model RoletopMVC.ViewModels.AgendarEventoViewModel
+    
+    <main>
+        <h2>Logado Como:</h2>
+        <br>
+        @Model.NomeUsuario
+        <section class="section-container">
+
+            <div class="agendar-evento">
+                <p>Agendar Evento</p>
+            </div>
+            <br />
+            <div class="imput_container">
+                <label for="name">Nome do Evento</label>
+                <br />
+                <input id="nome" type="text" maxlength="30" minlength="3" value="@Model.Cliente.NomeEvento">
+
+                <br />
+                <br />
+
+                <label for="data de do evento"> Data do Evento</label>
+                <br />
+                <input id="date" type="date" value="@Model.Cliente.DataEvento" />
+
+                <br />
+                <br />
+
+                <label for="horainicio"> Hora de Início</label>
+                <br />
+                <input id="hora1" type="time" value="@Model.Cliente.HoraInicio"/>
+
+                <br />
+                <br />
+
+                <label for="horatermino"> Hora de Término</label>
+                <br />
+                <input id="hora2" type="time" value="@Model.CLiente.HoraFim"/>
+
+                <br />
+                <br />
+
+                <label for="obs"> Observações (Como será, quantidade de pessoas, se terá empresa assesorando
+                    etc)</label>
+                <br />
+                <input id="obs" type="text" maxlength="500" minlength="2">
+
+                <br />
+                <br />
+
+                <label for="obs"> Nome Completo dos Participantes (Caso a retirada do convite seja online)</label>
+                <br />
+                <input id="participantes" type="text" minlength="3" maxlength="30">
+            </div>
+        </section>
+
+        <br />
+
+        <div class="finalizar">
+            <a href="end.html"> Finalizar!</a>
+        </div>
+    </main>

@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #7D0093;
+    color: #FFC600;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+/**********************************************************
+                            NAV
+**********************************************************/
+nav {
+    width: 100%;
+    border-bottom: 3px solid #FFC600;
+}
+
+nav img {
+    text-align: center;
+    width: 10%;
+    padding: 2%;
+}
+
+.header_ua {
+    text-align: left;
+    font-size: 20px;
+}
+
+/**********************************************************
+                        CONTAINERS
+**********************************************************/
+
+.text-container {
+   padding: 15% 5% 5% 5%;
+    align-items: center;
+}
+
+.content-container {
+    align-items: center;
+}
+
+.footer-container {
+    width: 100;
+}
+
+.agendar-evento {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.imput_container {
+    justify-content: space-around;
+}
+#event-boxes .table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #FFC600;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFC600;
+    font-family: 'Comic Sans MS';
+    margin: 1.5px;
+    max-width: 100%;
+}
+
+
+
+/**********************************************************
+                        FOOTER
+**********************************************************/
+
+footer {
+    color: #FFC600;
+    font-weight: 400;
+    font-size: 21px;
+    z-index: 0;
+    align-items: flex-end;
+}
+
+footer table {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+footer table .endereço {
+    width: 33.3%;
+    text-align: justify;
+    justify-content: center;
+}
+
+footer table .social {
+    width: 33.3%;
+}
+
+footer table .mapa_site {
+    width: 33.3%;
+    text-align: justify;
+}
