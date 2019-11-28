@@ -41,22 +41,30 @@
                         </a>
                     </li>
 
-                    <li class="bt-common-menu" id="localizaçao_bar">
-                        <a onclick="toggleMobileMenu()" href="index.html#localizaçao">Localização</a>
-                    </li>
-
-                    <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="invites.html">Convites</a>
-                    </li>
-
-                    <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="upcoming_events.html">Próximos Eventos</a>
-                    </li>
-
-                    <li class="bt-common-menu">
-                        <a onclick="toggleMobileMenu()" href="login.html">Login</a>
-                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#localizacao'>Localização</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Convites")'>Convites</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "ProximosEventos")'>Próximos Eventos</a></li>
+                    
+                    
+                    
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Login")#login'>Login</a></li>
+                    }
+                    else
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Pedidos</a></li>
+                    }
+                    <li><a id="bt-peca_ja" href='@Url.Action("Index","Pedido")'>Peça Já</a></li>
                 </ul>
             </div>
         </nav>
+        <!-- Não esquecer de realocar aquia logo area -->
+        @if("Home".Equals(@Model.NomeView))
+        {
+            Html.RenderPartial("_HeaderHomePage")
+        }
     </header>
