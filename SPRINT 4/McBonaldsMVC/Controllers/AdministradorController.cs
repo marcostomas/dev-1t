@@ -10,6 +10,10 @@ namespace McBonaldsMVC.Controllers {
         [HttpGet]
         public IActionResult Dashboard () 
         {
+            var tipoUsuarioSessao = ObterUsuarioNomeSession();
+            if(tipoUsuarioSessao.Equals((uint) TIpoUsuarios))
+            {
+
             var pedidos = pedidoRepository.ObterTodos ();
             DashboardviewModel dashboardViewModel = new DashboardviewModel ();
 
@@ -43,6 +47,7 @@ namespace McBonaldsMVC.Controllers {
             dashboardViewModel.UsuarioEmail = ObterUsuarioSession();
 
             return View(dashboardViewModel);
+            }
         }
     }
 }

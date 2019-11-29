@@ -1,4 +1,5 @@
 using System;
+using McBonaldsMVC.Enums;
 using McBonaldsMVC.Repositories;
 using McBonaldsMVC.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -49,6 +50,18 @@ namespace McBonaldsMVC.Controllers
                     //EXCLUIDO - if(cliente.Email.Equals(usuario) && cliente.Senha.Equals(senha))
                     if (cliente.Senha.Equals(senha))
                     {
+                        switch(cliente.TipoUsuario)
+                        {
+                            case (uint) TiposUsuarios.CLIENTE:
+                                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                                return RedirectToAction ("Historico", "Cliente");
+                            default:
+                                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                                return RedirectToAction ("Dashboard", "Administrador");
+                            
+                        }
                         //Deixa visivel para todos os controllers as informações 
                         //Exemplo: email,nome
                         //! HttpContext.Session.SetString - permite que os dados seja compartilhado entre controllers

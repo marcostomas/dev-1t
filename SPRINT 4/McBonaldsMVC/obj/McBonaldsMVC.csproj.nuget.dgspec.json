@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\McBonalds-Certo\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {}
   },
   "projects": {
-    "F:\\McBonalds-Certo\\McBonaldsMVC\\McBonaldsMVC.csproj": {
+    "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\McBonalds-Certo\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "projectUniqueName": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
         "projectName": "McBonaldsMVC",
-        "projectPath": "F:\\McBonalds-Certo\\McBonaldsMVC\\McBonaldsMVC.csproj",
-        "packagesPath": "C:\\Users\\36349647823\\.nuget\\packages\\",
-        "outputPath": "F:\\McBonalds-Certo\\McBonaldsMVC\\obj\\",
+        "projectPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\McBonaldsMVC.csproj",
+        "packagesPath": "C:\\Users\\44036901818\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\McBonaldsMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\36349647823\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\44036901818\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
