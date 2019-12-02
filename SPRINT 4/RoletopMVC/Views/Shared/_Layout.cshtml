@@ -56,15 +56,35 @@
                     else
                     {
                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li>
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Pedidos</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Eventos Marcados</a></li>
                     }
-                    <li><a id="bt-peca_ja" href='@Url.Action("Index","Pedido")'>Peça Já</a></li>
+                    <li><a id="bt-peca_ja" href='@Url.Action("Index","Pedido")'>Agende Já</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Não esquecer de realocar aquia logo area -->
         @if("Home".Equals(@Model.NomeView))
         {
-            Html.RenderPartial("_HeaderHomePage")
+            Html.RenderPartial("_HeaderHomePage");
         }
     </header>
+
+    @RenderBody()
+
+    <footer>      
+        <div class="footer-container">
+            <div class="footer-left-container">
+                <address>
+                    Alameda Barão de Limeira, 539 <br>
+                    Campos Elíseos - Sampa <br>
+                    roletop@email.com <br>
+                    11 3250 0000 <br>
+                </address>
+                
+            </div>
+                <div class="footer-center-container">
+                    <a href="https://pt-br.facebook.com"><i class="fab fa-facebook"></i>/roletop</a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i>/roletop</a>
+            </div>
+        </div>
+    </footer>

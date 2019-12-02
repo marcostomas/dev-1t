@@ -1,6 +1,6 @@
 namespace RoletopMVC.ViewModels
 {
-    public class AgendarEventoViewModel
+    public class PedidoViewModel : BaseViewModel
     {
         
     }

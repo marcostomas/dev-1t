@@ -11,7 +11,7 @@ namespace McBonaldsMVC.Controllers {
         public IActionResult Dashboard () 
         {
             var tipoUsuarioSessao = ObterUsuarioNomeSession();
-            if(tipoUsuarioSessao.Equals((uint) TIpoUsuarios))
+            if(tipoUsuarioSessao.Equals((uint) TipoUsuarios))
             {
 
             var pedidos = pedidoRepository.ObterTodos ();

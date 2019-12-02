@@ -14,6 +14,7 @@ body {
     font-family: 'Comic Sans MS';
 }
 
+
 /*********************************************************
                             NAV
 **********************************************************/
@@ -39,12 +40,12 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul > li {
+nav ul>li {
     width: 100%;
     text-align: justify;
 }
 
-nav ul > li > a {
+nav ul>li>a {
     padding: 0;
     display: block;
     text-decoration: none;
@@ -52,7 +53,7 @@ nav ul > li > a {
     font-weight: bold;
 }
 
-nav ul > li > a:hover {
+nav ul>li>a:hover {
     background-color: #7D0093;
     color: #FFC600;
 }
@@ -62,16 +63,16 @@ nav ul > li > a:hover {
     max-width: 1360px;
 }
 
-.section-container > a {
+.section-container>a {
     display: flex;
     padding: 20px 0;
     text-decoration: none;
     font-weight: bold;
 }
 
-.section-container img{
- max-width: 10%;
- text-align: center;
+.section-container img {
+    max-width: 10%;
+    text-align: center;
 }
 
 
@@ -84,9 +85,11 @@ nav ul > li > a:hover {
     font-size: 20px;
 }
 
+
 /*********************************************************
                             SERVIÇOS
 **********************************************************/
+
 
 /* .title_serviços {
     border: 1px solid #FFC600;
@@ -95,6 +98,7 @@ nav ul > li > a:hover {
 .info_box {
     border: 1px solid #FFC600;
 } */
+
 
 /* .flex-group {
     display: flex;
@@ -115,11 +119,10 @@ nav ul > li > a:hover {
     max-width: 100%;
 }
 
-.flex-group .box_serviços img{
+.flex-group .box_serviços img {
     border: 1px solid #FFC600;
     max-width: 100%;
     text-align: center;
-    
 }
 
 .info_box {
@@ -127,10 +130,12 @@ nav ul > li > a:hover {
     font-size: 15px;
 }
 
+
 /* .serviços_image {
     border: 1px solid #FFC600;
     max-width: 100%;
 } */
+
 
 /*********************************************************
                             SOBRE
@@ -146,15 +151,16 @@ nav ul > li > a:hover {
     font-size: 25px;
 }
 
+
 /*********************************************************
                             FOOTER
 **********************************************************/
+
 footer {
     color: #FFC600;
     font-weight: 400;
     font-size: 21px;
     z-index: 0;
-
 }
 
 footer table {
@@ -178,6 +184,7 @@ footer table .mapa_site {
     text-align: left;
 }
 
+
 /*********************************************************
                             MEDIA
 **********************************************************/
@@ -196,18 +203,15 @@ footer table .mapa_site {
         margin: 0.5em;
         max-width: 45%;
     } */
-
-    .flex-group > div > p:nth-child(odd) {
+    .flex-group>div>p:nth-child(odd) {
         line-height: 0.5em;
         font-size: 1em;
-     }
-     
-    .flex-group> div > p:nth-child(even) {
+    }
+    .flex-group>div>p:nth-child(even) {
         font-size: 2.5em;
         margin-top: -0.5em;
-     }
-
-     #banner p {
+    }
+    #banner p {
         font-size: 1.3em;
         font-weight: bold;
         padding-left: 2.5em;
@@ -218,45 +222,35 @@ footer table .mapa_site {
     #banner p {
         font-size: 1em;
     }
-
-    #banner p > strong {
+    #banner p>strong {
         -webkit-text-stroke: 3px #ffcc00;
     }
-
 }
 
 @media (max-width: 625px) {
-
-    #banner > img {
+    #banner>img {
         padding: 3em 0 0 0;
         width: 35%;
     }
-
     #banner p {
         font-size: 0.8em;
     }
-
-    #banner p > strong {
+    #banner p>strong {
         -webkit-text-stroke: 2px #ffcc00;
     }
-
     nav #bt-mobile-menu {
         display: block;
     }
-
     nav .bt-common-menu {
         display: none;
     }
-
     nav .bt-common-menu.active {
         display: block;
     }
-
     nav ul.mobile-mode {
         display: flex;
         flex-direction: column;
     }
-
     #sobre .flex-group {
         flex-direction: column;
         justify-content: center;
@@ -264,14 +258,12 @@ footer table .mapa_site {
         text-align: center;
         vertical-align: top;
     }
-
-    #sobre p h2{
+    #sobre p h2 {
         margin: 0;
     }
-
 }
 
-@media (max-width: 540px){
+@media (max-width: 540px) {
     footer {
         flex-direction: column;
         justify-content: center;
@@ -280,7 +272,6 @@ footer table .mapa_site {
         vertical-align: top;
     }
 }
-
 
 @media (max-width: 485px) {
     #banner {
