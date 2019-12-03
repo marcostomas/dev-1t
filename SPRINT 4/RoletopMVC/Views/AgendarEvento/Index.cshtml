@@ -18,7 +18,7 @@
                 <br />
                 <br />
 
-                <label for="data de do evento"> Data do Evento</label>
+                <label for="dataevento"> Data do Evento</label>
                 <br />
                 <input id="date" type="date" value="@Model.Cliente.DataEvento" />
 
@@ -29,33 +29,33 @@
                 <br />
                 <input id="hora1" type="time" value="@Model.Cliente.HoraInicio"/>
 
+                <div class="double-field">
+                <div>
+                    <label for="tipoevento">Tipo de Evento</label>
+                    <select id="tipodeevento" name="tipoevento" required>
+                        <option value="" disabled selected>Selecione</option>
+                        @foreach (var tipoevento in Model.Eventos)
+                        {
+                            <option value=@tipoevento.Nome>@tipoevento.Nome </option>
+                        }
+                    </select>
+                </div>
+                </div>
+
+                <label for="obs"> Observações (Nos diga como será o seu evento)</label>
+                <br />
+                <input id="obs" type="text" minlength="2">
+
                 <br />
                 <br />
 
-                <label for="horatermino"> Hora de Término</label>
+                <label for="obs"> Nome Completo dos Participantes</label>
                 <br />
-                <input id="hora2" type="time" value="@Model.CLiente.HoraFim"/>
-
-                <br />
-                <br />
-
-                <label for="obs"> Observações (Como será, quantidade de pessoas, se terá empresa assesorando
-                    etc)</label>
-                <br />
-                <input id="obs" type="text" maxlength="500" minlength="2">
-
-                <br />
-                <br />
-
-                <label for="obs"> Nome Completo dos Participantes (Caso a retirada do convite seja online)</label>
-                <br />
-                <input id="participantes" type="text" minlength="3" maxlength="30">
+                <input id="participantes" type="text" minlength="3">
+            </div>
+            
+            <div class="finalizar">
+                <a href="end.html"> Finalizar!</a>
             </div>
         </section>
-
-        <br />
-
-        <div class="finalizar">
-            <a href="end.html"> Finalizar!</a>
-        </div>
     </main>

@@ -6,7 +6,7 @@ namespace RoletopMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            
         }
     }
 }

@@ -3,13 +3,13 @@ using RoletopMVC.Enums;
 
 namespace RoletopMVC.Models
 {
-    public class Evento
+    public class Pedido
     {
         public ulong Id {get; set;}
         public Cliente Cliente {get; set;}
         public Balada Balada {get; set;}
         public Casamento Casamento {get; set;}
-        public Festa Festa {get; set;}
+        public Aniversario Aniversario {get; set;}
         public DateTime DataDoEvento {get; set;}
         public uint Status {get; set;}
         public string Observacoes {get; set;}
@@ -22,7 +22,7 @@ namespace RoletopMVC.Models
             this.Id = 0;
             this.Balada = new Balada(); 
             this.Casamento = new Casamento ();
-            this.Festa = new Festa ();
+            this.Aniversario = new Aniversario ();
             this.Status = (uint) StatusPedido.PENDENTE;
         }
     }
