@@ -1,4 +1,4 @@
-@model RoletopMVC.ViewModels.AgendarEventoViewModel
+@model RoletopMVC.ViewModels.PedidoViewModel
     
     <main>
         <h2>Logado Como:</h2>
@@ -11,35 +11,54 @@
             </div>
             <br />
             <div class="imput_container">
-                <label for="name">Nome do Evento</label>
+                <label for="nome"> Nome do Evento</label>
                 <br />
-                <input id="nome" type="text" maxlength="30" minlength="3" value="@Model.Cliente.NomeEvento">
+                <input id="nome" type="text" maxlength="60" minlength="3" value="@Model.Evento.Nome" name="nome">
 
                 <br />
                 <br />
 
-                <label for="dataevento"> Data do Evento</label>
+                <label for="data"> Data do Evento</label>
                 <br />
-                <input id="date" type="date" value="@Model.Cliente.DataEvento" />
+                <input id="data" type="date" value="@Model.Evento.DataDoEvento" name="data" />
 
                 <br />
                 <br />
 
-                <label for="horainicio"> Hora de Início</label>
+                <label for="hora"> Hora de Início</label>
                 <br />
-                <input id="hora1" type="time" value="@Model.Cliente.HoraInicio"/>
+                <input id="hora" type="time" value="@Model.Evento.HoraDoEvento" name="hora">
+
+                <br />
+                <br />
+
+                <label for="observacoes"> Observações</label>
+                <br />
+                <input id="observacoes" type="text" value="@Model.Evento.Observacoes" name="observacoes"/>
+
+                <br />
+                <br />
+
+                <label for="nomeParticipantes"> Nome dos Participantes</label>
+                <br />
+                <input id="nomeParticipantes" type="text" value="@Model.Evento.NomeParticipantes" name="nomeParticipantes"/>
+
+                <br />
+                <br />
 
                 <div class="double-field">
-                <div>
-                    <label for="tipoevento">Tipo de Evento</label>
-                    <select id="tipodeevento" name="tipoevento" required>
-                        <option value="" disabled selected>Selecione</option>
-                        @foreach (var tipoevento in Model.Eventos)
-                        {
-                            <option value=@tipoevento.Nome>@tipoevento.Nome </option>
-                        }
-                    </select>
-                </div>
+                    <div>
+                        <label for="tipoevento"> Tipo de Evento</label>
+                        <select id="tipoevento" name="tipoevento" required>
+                            
+                            <option value="" disabled selected>Selecione</option>
+                            
+                            @foreach (var tipoevento in Model.Evento)
+                            {
+                                <option value=@tipoevento.Nome> @tipoevento.Nome </option>
+                            }
+                        </select>
+                    </div>
                 </div>
 
                 <label for="obs"> Observações (Nos diga como será o seu evento)</label>

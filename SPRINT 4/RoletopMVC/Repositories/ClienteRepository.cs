@@ -16,7 +16,7 @@ namespace RoletopMVC.Repositories
             }
         }
 
-        public bool Inserir(ClienteRepository cliente)
+        public bool Inserir(Cliente cliente)
         {
             var linha = new string [] {PrepararRegistroCSV(cliente)};
             File.AppendAllLines(PATH, linha);
@@ -24,7 +24,7 @@ namespace RoletopMVC.Repositories
             return true;
         }
 
-        public ClienteRepository ObterPor (string email)
+        public Cliente ObterPor (string email)
         {
             var linhas = File.ReadAllLines(PATH);
 

@@ -17,11 +17,11 @@ namespace RoletopMVC.Repositories
             }
         }
 
-        public bool Inserir (PedidoRepository pedido)
+        public bool Inserir (Pedido pedido)
         {
             var quantidadePedidos = File.ReadLines(PATH).Length;
             pedido.Id = (ulong)  ++quantidadePedidos;
-            var linha = new string[] {PrepararRegistroCSV (pedido)};
+            var linha = new string[] {PrepararPedidoCSV (pedido)};
             File.AppendAllLines (PATH, linha);
 
             return true;
@@ -36,7 +36,7 @@ namespace RoletopMVC.Repositories
             {
                 if(pedido.Cliente.Email.Equals(emailCliente))
                 {
-                    pedidos.Cliente.Add(pedido);
+                    pedidosCliente.Add(pedido);
                 }
             }
 
@@ -62,28 +62,16 @@ namespace RoletopMVC.Repositories
                 pedido.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
 
 
-                pedido.Aniversario.Nome = ExtrairValorDoCampo("aniversario_nome", linha);
-                pedido.Aniversario.DataEvento = DateTime.Parse(ExtrairValorDoCampo("aniversario_data", linha));
-                pedido.Aniversario.HoraEvento = DateTime.Parse(ExtrairValorDoCampo("aniversario_hora", linha));
-                pedido.Aniversario.NomeParticipantes = ExtrairValorDoCampo("aniversario_participantes", linha);
-
-
-                pedido.Balada.Nome = ExtrairValorDoCampo("balada_nome", linha);
-                pedido.Balada.DataEvento = DateTime.Parse(ExtrairValorDoCampo("balada_data", linha));
-                pedido.Balada.HoraEvento =DateTime.Parse(ExtrairValorDoCampo("balada_hora", linha));
-                pedido.Balada.NomeParticipantes = ExtrairValorDoCampo("balada_participantes", linha);
-
-
-                pedido.Casamento.Nome = ExtrairValorDoCampo("casamento_nome", linha);
-                pedido.Casamento.DataEvento = DateTime.Parse(ExtrairValorDoCampo("casamento_data", linha));
-                pedido.Casamento.HoraEvento = DateTime.Parse(ExtrairValorDoCampo("casmento_hora", linha));
-                pedido.Casamento.NomeParticipantes = ExtrairValorDoCampo("casamento_participantes", linha);
+                pedido.Evento.Nome = ExtrairValorDoCampo("evento_nome", linha);
+                pedido.Evento.DataDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_data", linha));
+                pedido.Evento.HoraDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_hora", linha));
+                pedido.Evento.Observacoes = ExtrairValorDoCampo("evento_observacoes", linha);
+                pedido.Evento.NomeParticipantes = ExtrairValorDoCampo("evento_participantes", linha);
 
                 //TODO: Verificar se será através do atributo 'PrecoTotal (soma)' ou o evento já vem definido seu preço
+                //! CANCELADO : Em 05/12 (4)
                 // pedido.PrecoTotal = double.Parse(ExtrairValorDoCampo("preco_total", linha));
                 // pedido.DataDoPedido = DateTime.Parse(ExtrairValorDoCampo("data_pedido", linha));
-
-
                 pedidos.Add(pedido);
             }
 
@@ -136,13 +124,11 @@ namespace RoletopMVC.Repositories
         private string PrepararPedidoCSV (Pedido pedido)
         {
             Cliente c = pedido.Cliente;
-            Aniversario a = pedido.Aniversario;
-            Balada b = pedido.Balada;
-            Casamento cas = pedido.Casamento;
-
+            Evento e = pedido.Evento;
 
             //TODO: Terminar 'return'
-            return $"id={pedido.Id};status_pedido={pedido.Status}";
+            // *  TERMINADO. Em 05/12 (4)
+            return $"id={pedido.Id};status_pedido={pedido.Status};cliente_nome={pedido.Cliente.Nome};cliente_cpf={pedido.Cliente.CPF};cliente_telefone={pedido.Cliente.Telefone};cliente_email={pedido.Cliente.Email};evento_nome={pedido.Evento.Nome};evento_data={pedido.Evento.DataDoEvento};evento_hora={pedido.Evento.HoraDoEvento};evento_observacoes={pedido.Evento.Observacoes};evento_participantes={pedido.Evento.NomeParticipantes}";
         }
     }
 }
