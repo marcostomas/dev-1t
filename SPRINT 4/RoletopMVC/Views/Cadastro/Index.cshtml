@@ -3,46 +3,45 @@
 
         <br/>
 
-        <form method="POST" action="user.html">
+        <form method="POST" action='@Url.Action("CadastrarCliente", "Cliente")'>
 
             <div>
-                <label for="name">Nome Completo</label>
+                <label for="nome">Nome Completo</label>
                 <br />
-                <input id="nome" type="text">
+                <input id="nome" type="text" name="nome">
             </div>
 
             <div>
-                <label for="CPF/CNPF">CPF/CNPJ</label>
+                <label for="cpf">CPF/CNPJ</label>
                 <br />
-                <input id="cpf/cnpj" type="number" />
+                <input id="cpf" type="number" name="cpf" />
             </div>
 
             <div>
                 <label for="email">E-mail</label>
                 <br />
-                <input id="email" type="email" />
+                <input id="email" type="email" name="email" />
             </div>
 
             <div>
-                <label for="Telefone">Telefone</label>
+                <label for="telefone">Telefone</label>
                 <br />
-                <input id="telefone" type="tel" />
+                <input id="telefone" type="tel" name="telefone"/>
             </div>
 
             <div>
-                <label for="data de nascimento"> Data de Nascimento</label>
+                <label for="data"> Data de Nascimento</label>
                 <br />
-                <input id="date" type="date" />
+                <input id="data" type="date" name="data"/>
             </div>
 
             <div>
                 <label for="senha">Senha</label>
                 <br />
-                <input id="senha" type="password" />
+                <input id="senha" type="password" name="senha"/>
             </div>
 
-            <br />
+            <input type="submit" value="Finalizar Cadastro"/>
 
-            <a href="user.html">Cadastrar-me</a>
         </form>
     </main>
