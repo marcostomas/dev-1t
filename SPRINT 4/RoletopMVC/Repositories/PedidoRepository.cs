@@ -19,7 +19,7 @@ namespace RoletopMVC.Repositories
 
         public bool Inserir (Pedido pedido)
         {
-            var quantidadePedidos = File.ReadLines(PATH).Length;
+            var quantidadePedidos = File.ReadAllLines(PATH).Length;
             pedido.Id = (ulong)  ++quantidadePedidos;
             var linha = new string[] {PrepararPedidoCSV (pedido)};
             File.AppendAllLines (PATH, linha);

@@ -12,7 +12,7 @@ namespace RoletopMVC.ViewModels
         public PedidoViewModel()
         {
             this.Evento = new List<Evento>();
-            this.NomeUsuario = "";
+            this.NomeUsuario = Cliente.Nome;
             this.Cliente = new Cliente ();
         }
     }

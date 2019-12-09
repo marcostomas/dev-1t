@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoletopMVC.Enums;
 using RoletopMVC.Models;
 using RoletopMVC.Repositories;
 using RoletopMVC.ViewModels;
@@ -16,7 +17,7 @@ namespace RoletopMVC.Controllers
         {
             PedidoViewModel pvm = new PedidoViewModel();
             //TODO: FAZER O EVENTO REPOSITORY
-            pvm.Eventos = eventoRepository.ObterTodos();
+            pvm.Evento = eventoRepository.ObterTodos();
 
             var usuarioLogado = ObterUsuarioSession();
             var nomeUsuarioLogado = ObterUsuarioNomeSession();
@@ -37,18 +38,79 @@ namespace RoletopMVC.Controllers
             pvm.UsuarioEmail = "usuarioLogado";
             pvm.UsuarioNome = nomeUsuarioLogado;
 
-            return View(pvm)
+            return View(pvm);
         }
 
-
+            //TODO: TERMINAR MÉTODO REGISTRAR
+            // !  IMPORTANTISSÍMO
         public IActionResult Registrar(IFormCollection form)
         {
             ViewData["Action"] = "Pedido";
             Pedido pedido = new Pedido();
-
-            var nomeEvento = form["tipoevento"];
-            Evento evento = new Evento();
             
+            // TODO: Verificar se está tudo correto
+
+            var tipoEvento = form["tipoEvento"];
+            Evento evento = new Evento();
+        
+            
+            if(pedidoRepository.Inserir (pedido))
+            {
+                return View("Sucesso", new RespostaViewModel()
+                {
+                    NomeView = "Pedido",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel()
+                {
+                    NomeView = "Pedido",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+        }
+
+        public IActionResult Aprovar(ulong id)
+        {
+            var pedido = pedidoRepository.ObterPor(id);
+            pedido.Status = (uint) StatusPedido.APROVADO;
+
+            if(pedidoRepository.Atualizar(pedido))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel ("Não foi possível aprovar seu pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession (),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+        }
+        public IActionResult Reprovar(ulong id)
+        {
+            var pedido = pedidoRepository.ObterPor(id);
+            pedido.Status = (uint) StatusPedido.REPROVADO;
+
+            if(pedidoRepository.Atualizar(pedido))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel ("Não foi possível aprovar seu pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession (),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
         }
     }
 }

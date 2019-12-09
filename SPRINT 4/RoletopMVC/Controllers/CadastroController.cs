@@ -46,7 +46,7 @@ namespace RoletopMVC.Controllers
                         NomeView = "Cadastro",
                         UsuarioEmail = ObterUsuarioSession(),
                         UsuarioNome = ObterUsuarioNomeSession()
-                    });;
+                    });
             }
             catch (Exception e)
             {

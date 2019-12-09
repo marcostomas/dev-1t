@@ -4,6 +4,7 @@ namespace RoletopMVC.Models
 {
     public class Evento
     {
+        public Cliente Cliente {get; set;}
         public string Nome {get; set;}
         public DateTime DataDoEvento {get; set;}
         public DateTime HoraDoEvento {get; set;}

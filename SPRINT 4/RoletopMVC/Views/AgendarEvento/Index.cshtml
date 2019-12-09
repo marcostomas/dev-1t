@@ -1,7 +1,7 @@
 @model RoletopMVC.ViewModels.PedidoViewModel
     
     <main>
-        <h2>Logado Como:</h2>
+        <h2>Bem-Vindx</h2>
         <br>
         @Model.NomeUsuario
         <section class="section-container">
@@ -11,51 +11,51 @@
             </div>
             <br />
             <div class="imput_container">
-                <label for="nome"> Nome do Evento</label>
+                <label for="nomeEvento"> Nome do Evento</label>
                 <br />
-                <input id="nome" type="text" maxlength="60" minlength="3" value="@Model.Evento.Nome" name="nome">
+                <input id="nomeEvento" type="text" maxlength="60" minlength="3" name="nomeEvento">
 
                 <br />
                 <br />
 
-                <label for="data"> Data do Evento</label>
+                <label for="dataEvento"> Data do Evento</label>
                 <br />
-                <input id="data" type="date" value="@Model.Evento.DataDoEvento" name="data" />
+                <input id="dataEvento" type="date" name="dataEvento" />
 
                 <br />
                 <br />
 
-                <label for="hora"> Hora de Início</label>
+                <label for="horaEvento"> Hora de Início</label>
                 <br />
-                <input id="hora" type="time" value="@Model.Evento.HoraDoEvento" name="hora">
+                <input id="horaEvento" type="time" name="horaEvento">
 
                 <br />
                 <br />
 
                 <label for="observacoes"> Observações</label>
                 <br />
-                <input id="observacoes" type="text" value="@Model.Evento.Observacoes" name="observacoes"/>
+                <input id="observacoes" type="text" name="observacoes"/>
 
                 <br />
                 <br />
 
                 <label for="nomeParticipantes"> Nome dos Participantes</label>
                 <br />
-                <input id="nomeParticipantes" type="text" value="@Model.Evento.NomeParticipantes" name="nomeParticipantes"/>
+                <input id="nomeParticipantes" type="text" name="nomeParticipantes"/>
 
                 <br />
                 <br />
 
                 <div class="double-field">
                     <div>
-                        <label for="tipoevento"> Tipo de Evento</label>
-                        <select id="tipoevento" name="tipoevento" required>
+                        <label for="tipoEvento"> Tipo de Evento</label>
+                        <select id="tipoEvento" name="tipoEvento" required>
                             
                             <option value="" disabled selected>Selecione</option>
                             
-                            @foreach (var tipoevento in Model.Evento)
+                            @foreach (var tipoEvento in Model.Evento)
                             {
-                                <option value=@tipoevento.Nome> @tipoevento.Nome </option>
+                                <option value=@tipoEvento.Nome> @tipoEvento.Nome </option>
                             }
                         </select>
                     </div>
