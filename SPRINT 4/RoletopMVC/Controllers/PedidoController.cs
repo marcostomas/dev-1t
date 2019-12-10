@@ -17,6 +17,7 @@ namespace RoletopMVC.Controllers
         {
             PedidoViewModel pvm = new PedidoViewModel();
             //TODO: FAZER O EVENTO REPOSITORY
+            // * TERMINADO 09/12 (6)
             pvm.Evento = eventoRepository.ObterTodos();
 
             var usuarioLogado = ObterUsuarioSession();
