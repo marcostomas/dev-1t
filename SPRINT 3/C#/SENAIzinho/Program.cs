@@ -1,65 +1,62 @@
 ﻿using System;
-using Aluno;
-using Sala;
 
 namespace SENAIzinho
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Main(string[]Args)
+        System.Console.WriteLine("===============================");
+        System.Console.WriteLine("     Sistema S - Cadastro");
+        System.Console.WriteLine("===============================");
+
+            int limiteAlunos = 0;
+            int limiteSalas = 0;
+            Aluno[] alunos;
+            Sala[] salas;
+            int alunosCadastrados;
+            int salasCadastradas;
+            bool querSair;
+
+        public void CadastrarAluno(int limiteAlunos)
         {
-            System.Console.WriteLine("===============================");
-            System.Console.WriteLine("     Sistema S - Cadastro");
-            System.Console.WriteLine("===============================");
+            if (limiteAlunos < 100)
+            {
+                System.Console.WriteLine("Digite o nome do Aluno");
+                string nome = Console.ReadLine();
+
+                System.Console.WriteLine("Digite a idade do Aluno");
+                int idade = int.Parse(Console.ReadLine());
+
+                Alunos[] alunos = new Alunos[];
+            }else{
+                System.Console.WriteLine("não há vagas disponíveis!");
+            }
+        }
+
+        public void CadastrarSala()
+        {
+            if(limiteSalas < 10)
+            {
+                
+            }
+        }
+
+        public void AlocarAluno()
+        {
             
-            System.Console.WriteLine();
+        }
+        public void RemoverAluno()
+        {
+            System.Console.WriteLine("Digite o nome do Aluno");
+            string aluno = Console.ReadLine();
+        }
+        public void VerificarSalas()
+        {
 
-            System.Console.WriteLine("Digite o Número das Seguintes Opções:");
-            System.Console.WriteLine();
-            System.Console.WriteLine("1 - Cadastrar Aluno");
-            System.Console.WriteLine("2 - Alocar Aluno em Sala");
-            System.Console.WriteLine("3 - Terminar");
-            opcao = int.Parse(Console.ReadLine());
-            
-            // array
+        }
+        public void verificarAlunos()
+        {
 
-            do{
-
-            
-                switch (opcao){
-
-                    case 1:
-                        Console.WriteLine("Nome do Aluno");
-                        string nome = Console.ReadLine();
-
-                        System.Console.WriteLine("Data de Nascimento do Aluno");
-                        DateTime datanascimento = new Console.ReadLine();
-
-                        System.Console.WriteLine("Curso");
-                        string curso = new Console.ReadLine();
-
-                        System.Console.WriteLine("Número da Sala");
-                        int numerosala = new Console.ReadLine();
-                    break;
-
-                    case 2:
-                        System.Console.WriteLine("Digite o Número da Sala onde o aluno será alocado:");
-                        nosala = int.Parse(Console.ReadLine());
-                    break;
-
-                    case 3:
-                        System.Console.WriteLine("Terminando...");
-                    break;
-
-                    default:
-                        System.Console.WriteLine("Opção Inválida");
-                        Console.ReadLine();
-                    break;
-                }
-            }while(opcao != 0)
-            return 0;
-            
-            Aluno aluno1 = new Aluno (nome, datanascimento, curso, nosala);
         }
     }
 }

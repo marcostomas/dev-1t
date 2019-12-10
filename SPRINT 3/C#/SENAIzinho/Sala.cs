@@ -1,33 +1,32 @@
-using System;
-using System.Collections.Generic;
-
-namespace SENAIzinho {
-    public class Sala {
-        public int CapacidadeAtual;
-        public int CapacidadeTotal;
-        public int NumeroSala;
+namespace SENAIzinho 
+{
+    public class Sala 
+    {
+        public int CapacidadeAtual = 0;
+        public int CapacidadeTotal  = 30;
+        public int numeroSala;
         public string[] Alunos;
-        int Alunos = lista.count;
         
-        public bool Salas(int nosala){
-            if((nosala > 0) && (nosala > 10)){
-                return false;
-            }else {
-                return true;
-            }
+
+        public Sala(int numerosala, int capacidadeTotal)
+        {
+            this.numeroSala = numerosala;
+            this.CapacidadeTotal = capacidadeTotal;
         }
-        
-        
-        
-        
-        List <Alunos> listaA = new List<Alunos>();
 
-        Aluno a1 = new Alunos [];
-        Aluno a2 = new Alunos [];
-        Aluno a3 = new Alunos [];
-        Aluno a4 = new Alunos [];
-        Aluno a5 = new Alunos [];
+        public string AlocarAluno(string Nome)
+        {
+            Nome;
+        }
 
-        List <Salas> listaS = new List<
+        public string RemoverAluno (string)
+        {
+
+        }
+
+        public string MostrarAlunos()
+        {
+            System.Console.WriteLine();
+        }
     }
 }

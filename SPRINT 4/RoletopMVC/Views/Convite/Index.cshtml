@@ -1,0 +1,40 @@
+@model RoletopMVC.ViewModels.ConviteViewModel
+
+<main class="content-container">
+
+        <br />
+        <br />
+
+        <h2>Convites</h2>
+
+        <br />
+        <br />
+        <br />
+
+        <form method="POST" action='@Url.Action("Convite", "Convite")'>
+
+            <div>
+                <label for="nome">Seu Nome Completo</label>
+                <br />
+                <input type="text" name="nome">
+            </div>
+
+            <br/>
+
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email" />
+            </div>
+
+            <br />
+
+            <div>
+                <label for="cliente">Nome do Anfitrião</label>
+                    <br/>
+                <input type="text" name="cliente"/>
+            </div>
+
+            <input type="submit" value="Receber Convite" />
+        </form>
+    </main>
