@@ -1,2 +1,2 @@
-tipo_usuario=0;nome=Marcos;cpf=44036901818;email=123456789;data_nascimento=23/04/2003 00:00:00;telefone=admin@email.com;senha=115467892
-tipo_usuario=1;nome=marcos;cpf=44036901818;email=123456;data_nascimento=23/04/2003 00:00:00;telefone=tio@email.com;senha=115467892
+tipo_usuario=0;nome=Ademir;cpf=12345678918;email=admin@email.com;telefone=11942103697;data_nascimento=22/04/2003 00:00:00;senha=123456789
+tipo_usuario=1;nome=Marcos;cpf=44036901818;email=mtomasferreira@hotmail.com;telefone=11952069798;data_nascimento=23/04/2003 00:00:00;senha=123456

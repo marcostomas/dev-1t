@@ -1,0 +1,22 @@
+#galeria {
+    display: block;
+    overflow: hidden;
+    margin: 0%;
+}
+
+h2 {
+    margin: 0%;
+    padding: 1% 0;
+    text-align: center;
+}
+
+#galeria>img {
+    margin: 10px;
+    max-width: 100%;
+    height: 50%;
+    transition: all 0.3s;
+}
+
+#galeria>img:hover {
+    transform: scale(0.9);
+}

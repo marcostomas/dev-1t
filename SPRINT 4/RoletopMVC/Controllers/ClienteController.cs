@@ -90,7 +90,7 @@ namespace RoletopMVC.Controllers
             return View(new HistoricoViewModel ()
             {
                 Pedidos = pedidosCliente,
-                NomeView = "Histórico",
+                NomeView = "Historico",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
             });

@@ -32,10 +32,10 @@ namespace RoletopMVC.Controllers
                 Cliente cliente = new Cliente(
                     form["nome"],
                     ulong.Parse(form["cpf"]),
-                    form["email"],
-                    form["telefone"],
                     form["senha"],
-                    DateTime.Parse(form["data"]));
+                    form["email"],
+                    DateTime.Parse(form["data"]),
+                    form["telefone"]);
 
                     cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
 

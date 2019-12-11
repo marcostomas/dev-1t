@@ -33,12 +33,12 @@ namespace RoletopMVC.Repositories
                 if(ExtrairValorDoCampo("email", item).Equals(email))
                 {
                     Cliente c = new Cliente();
+                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
                     c.Nome = ExtrairValorDoCampo("nome", item);
                     c.CPF = ulong.Parse(ExtrairValorDoCampo("cpf", item));
-                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
                     c.Email = ExtrairValorDoCampo("email", item);
-                    c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
                     c.Telefone = ExtrairValorDoCampo("telefone", item);
+                    c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
                     c.Senha = ExtrairValorDoCampo("senha", item);
 
                     return c;
@@ -50,7 +50,7 @@ namespace RoletopMVC.Repositories
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpf={cliente.CPF};email={cliente.Email};data_nascimento={cliente.DataNascimento};telefone={cliente.Telefone};senha={cliente.Senha}";
+            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};cpf={cliente.CPF};email={cliente.Email};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento};senha={cliente.Senha}";
         }
     }
 }

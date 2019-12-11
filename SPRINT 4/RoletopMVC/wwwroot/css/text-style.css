@@ -1,100 +1,137 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    background-color: #7D0093;
-    color: #FFC600;
+/*********************************************************
+                            CORPO
+**********************************************************/
+
+body {
     font-family: 'Comic Sans MS';
-    text-align: center;
+    margin: 0%;
 }
+
+
 /**********************************************************
                             NAV
 **********************************************************/
+
 nav {
+    background-color: black;
+    color: white;
     width: 100%;
-    border-bottom: 3px solid #FFC600;
 }
 
-nav img {
-    text-align: center;
-    width: 10%;
-    padding: 2%;
+nav #bt-mobile-menu {
+    display: none;
 }
 
-.header_ua {
-    text-align: left;
-    font-size: 20px;
-}
-
-/**********************************************************
-                        CONTAINERS
-**********************************************************/
-
-.text-container {
-   padding: 15% 5% 5% 5%;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
+    font-size: 1.5em;
+    list-style-type: none;
 }
 
-.content-container {
-    align-items: center;
-}
-
-.footer-container {
-    width: 100;
-}
-
-.agendar-evento {
+nav ul>li {
+    width: 100%;
     text-align: center;
-    font-size: 50px;
+}
+
+nav ul>li>a {
+    padding: 0.4em;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
     font-weight: bold;
 }
 
-.imput_container {
-    justify-content: space-around;
-}
-#event-boxes .table {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px solid #FFC600;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #FFC600;
-    font-family: 'Comic Sans MS';
-    margin: 1.5px;
-    max-width: 100%;
+nav ul>li>a:hover {
+    background-color: #ffc600;
+    color: #7d0093;
 }
 
+a.active {
+    color: #ffc600;
+}
 
 
 /**********************************************************
-                        FOOTER
+                        MAIN
+**********************************************************/
+
+main {}
+
+
+/*********************************************************
+                            FOOTER
 **********************************************************/
 
 footer {
-    color: #FFC600;
-    font-weight: 400;
-    font-size: 21px;
-    z-index: 0;
-    align-items: flex-end;
-}
-
-footer table {
+    background-color: black;
+    color: whitesmoke;
     width: 100%;
-    padding: 0 10px;
     text-align: center;
+    font-size: 1.4em;
 }
 
-footer table .endereço {
-    width: 33.3%;
-    text-align: justify;
-    justify-content: center;
+footer>address {
+    color: #ffc600;
 }
 
-footer table .social {
-    width: 33.3%;
+
+/*********************************************************
+                            MEDIA
+**********************************************************/
+
+@media (max-width: 1200px) {
+    #banner h2 a {
+        font-size: 1.6em;
+        font-weight: bold;
+        padding-left: 2.5em;
+        width: 45%;
+    }
 }
 
-footer table .mapa_site {
-    width: 33.3%;
-    text-align: justify;
+@media (max-width: 1000px) {
+    .flex-group>div>p:nth-child(odd) {
+        line-height: 0.5em;
+        font-size: 1em;
+    }
+    .flex-group>div>p:nth-child(even) {
+        font-size: 2.5em;
+        margin-top: -0.5em;
+    }
+}
+
+@media (max-width: 625px) {
+    nav #bt-mobile-menu {
+        display: block;
+    }
+    nav .bt-common-menu {
+        display: none;
+    }
+    nav .bt-common-menu.active {
+        display: block;
+    }
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #servicos>.section-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
+@media (max-width: 540px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: top;
+    }
 }
