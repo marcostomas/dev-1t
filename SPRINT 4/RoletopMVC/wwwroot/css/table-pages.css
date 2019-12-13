@@ -1,0 +1,24 @@
+table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    border: 1px dashed #ffc600;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color: black;
+}
+
+tfoot td {
+    text-align: center;
+    color: #ffc600;
+    background-color: #7d0093;
+}
+
+thead>tr:first-child>th:last-child {
+    padding: 0 .5em;
+}

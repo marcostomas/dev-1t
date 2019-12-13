@@ -1,0 +1,23 @@
+@model RoletopMVC.ViewModels.HistoricoViewModel
+<main>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome Cliente</th>
+                <th>Tipo do Evento</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach( var pedido in Model.Pedidos ) {
+                <tr>
+                    <td>@pedido.Evento.Cliente.Nome</td>
+                    <td>@pedido.Cliente.Nome</td>
+                    <td>@pedido.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</main>

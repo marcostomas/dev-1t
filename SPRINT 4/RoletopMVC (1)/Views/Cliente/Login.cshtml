@@ -1,0 +1,26 @@
+<main>
+    <section class="formulario">
+        <h2>Login</h2>
+
+        <form method="POST" action='@Url.Action("Login", "Cliente")'>
+            <div class="form-box">
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+
+            <div class="form-box">
+
+                <label for="senha">Senha</label>
+                <br />
+                <input id="senha" type="password" name="senha"/>
+
+            </div>
+
+            <div class="enter">
+                <input type="submit" value="Entrar"/>
+                <a href='@Url.Action("Index", "Cadastro")'>Cadastrar-me</a>
+            </div>
+        </form>
+    </section>
+</main>

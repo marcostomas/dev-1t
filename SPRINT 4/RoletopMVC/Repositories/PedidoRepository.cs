@@ -63,10 +63,9 @@ namespace RoletopMVC.Repositories
 
 
                 pedido.Evento.Nome = ExtrairValorDoCampo("evento_nome", linha);
-                pedido.Evento.DataDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_data", linha));
-                pedido.Evento.HoraDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_hora", linha));
+                pedido.DataDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_data", linha));
+                pedido.HoraDoEvento = DateTime.Parse(ExtrairValorDoCampo("evento_hora", linha));
                 pedido.Evento.Observacoes = ExtrairValorDoCampo("evento_observacoes", linha);
-                pedido.Evento.NomeParticipantes = ExtrairValorDoCampo("evento_participantes", linha);
 
                 //TODO: Verificar se será através do atributo 'PrecoTotal (soma)' ou o evento já vem definido seu preço
                 //! CANCELADO : Em 05/12 (4)
@@ -128,7 +127,9 @@ namespace RoletopMVC.Repositories
 
             //TODO: Terminar 'return'
             // *  TERMINADO. Em 05/12 (4)
-            return $"id={pedido.Id};status_pedido={pedido.Status};cliente_nome={pedido.Cliente.Nome};cliente_cpf={pedido.Cliente.CPF};cliente_telefone={pedido.Cliente.Telefone};cliente_email={pedido.Cliente.Email};evento_nome={pedido.Evento.Nome};evento_data={pedido.Evento.DataDoEvento};evento_hora={pedido.Evento.HoraDoEvento};evento_observacoes={pedido.Evento.Observacoes};evento_participantes={pedido.Evento.NomeParticipantes}";
+            return $"id={pedido.Id};status_pedido={pedido.Status};cliente_nome={pedido.Cliente.Nome};cliente_cpf={pedido.Cliente.CPF};cliente_telefone={pedido.Cliente.Telefone};cliente_email={pedido.Cliente.Email};evento_nome={pedido.Evento.Nome};evento_data={pedido.DataDoEvento};evento_hora={pedido.HoraDoEvento};evento_observacoes={pedido.Evento.Observacoes};";
+
+            // evento_hora={pedido.HoraDoEvento}
         }
     }
 }

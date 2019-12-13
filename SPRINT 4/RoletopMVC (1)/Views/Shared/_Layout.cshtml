@@ -1,0 +1,129 @@
+﻿@model RoletopMVC.ViewModels.BaseViewModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Rolê Top</title>
+    <!--Favicon-->
+    <link href="/img/logo.png" rel="icon" type="image/x-icon" />
+    <!--Importar fontes do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet"> 
+
+    <link href="~/css/index.css" rel="stylesheet" type="text/css"/>
+
+    @if("Login".Equals(@Model.NomeView))
+    {
+        <link href="~/css/form-pages.css" rel="stylesheet" type="text/css"/>
+    }
+        
+    @if("Cadastro".Equals(@Model.NomeView))
+    {
+        <link href="~/css/form-pages.css" rel="stylesheet" type="text/css"/>
+    }
+
+    @if("Dashboard".Equals(@Model.NomeView))
+    {
+        <link href="~/css/style-admin.css" rel="stylesheet" type="text/css"/>
+    }
+
+    @if("Galeria".Equals(@Model.NomeView))
+    {
+        <link href="~/css/galery.css" rel="stylesheet" type="text/css"/>
+    }
+    @if("Pedido".Equals(@Model.NomeView))
+    {
+        <link href="~/css/form-pages.css" rel="stylesheet" type="text/css"/>
+    }
+    
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+
+                <ul>
+                    <img src="/img/logo.png" alt="Logo Rolê Top" title="Logo" width="20%">
+                <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+                    <li id="bt-mobile-menu"><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></a></li>
+                <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#localizacao'>Localização</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Galeria")'>Galeria</a></li>
+
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+                    }
+                    else
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Pedido" asp-action="Index">Agendar Evento</a></li>
+                    }
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Não esquecer de realocar aqui a logo area -->
+        @if("Home".Equals(@Model.NomeView))
+        {
+            Html.RenderPartial("_HeaderHomePage");
+        }
+    </header>
+    
+    @RenderBody()
+
+    <footer>      
+        <div class="footer-container">
+            
+            <address>
+                Alameda Barão de Limeira, 539 <br/>
+                Campos Elíseos - Sampa <br/>
+                roletop@email.com <br/>
+                11 3250 0000 <br/>
+            </address>
+
+            <a href="https://pt-br.facebook.com"><i class="fab fa-facebook"></i>/roletop</a> <br/>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i>/roletop</a> <br/>
+            <a href="#">Voltar ao Topo!</a>
+
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() 
+        {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+        }
+    </script>
+</body>

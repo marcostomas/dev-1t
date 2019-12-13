@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoletopMVC.Enums;
@@ -36,7 +37,7 @@ namespace RoletopMVC.Controllers
             }
 
             pvm.NomeView = "Pedido";
-            pvm.UsuarioEmail = "usuarioLogado";
+            pvm.UsuarioEmail = usuarioLogado;
             pvm.UsuarioNome = nomeUsuarioLogado;
 
             return View(pvm);
@@ -47,12 +48,30 @@ namespace RoletopMVC.Controllers
         public IActionResult Registrar(IFormCollection form)
         {
             ViewData["Action"] = "Pedido";
-            Pedido pedido = new Pedido();
+
+            var cliente = clienteRepository.ObterPor(ObterUsuarioSession());
             
-            // TODO: Verificar se está tudo correto
+            // Cliente cliente = new Cliente ()
+            // {
+            //     Nome = cliente1.Nome,
+            //     CPF = cliente1.CPF,
+            //     Email = cliente1.Email
+            // }
 
             var tipoEvento = form["tipoEvento"];
-            Evento evento = new Evento();
+            Evento evento = new Evento()
+            {
+                Nome = form["nomeEvento"],
+                Observacoes = form["observacoes"],
+            };
+
+            Pedido pedido = new Pedido()
+            {
+                HoraDoEvento = DateTime.Parse(form["horaEvento"]),
+                DataDoEvento = DateTime.Parse(form["dataEvento"]),
+                Cliente = cliente,
+                Evento = evento
+            };
         
             
             if(pedidoRepository.Inserir (pedido))

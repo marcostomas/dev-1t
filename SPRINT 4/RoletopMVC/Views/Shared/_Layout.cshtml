@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Rolê Top</title>
     <!--Favicon-->
-    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link href="/img/logo.png" rel="icon" type="image/x-icon" />
     <!--Importar fontes do Google-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet"/>
@@ -36,7 +36,22 @@
     {
         <link href="~/css/galery.css" rel="stylesheet" type="text/css"/>
     }
-    
+    @if("Pedido".Equals(@Model.NomeView))
+    {
+        <link href="~/css/form-pages.css" rel="stylesheet" type="text/css"/>
+    }
+    @if("Historico".Equals(@Model.NomeView))
+    {
+        <link href="~/css/table-pages.css" rel="stylesheet" type="text/css"/>
+    }
+    @if("Erro".Equals(@Model.NomeView))
+    {
+        <link href="~/css/return-message-page.css" rel="stylesheet" type="text/css"/>
+    }
+    @if("Sucesso".Equals(@Model.NomeView))
+    {
+        <link href="~/css/return-message-page.css" rel="stylesheet" type="text/css"/>
+    }
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 
@@ -46,14 +61,13 @@
             <div class="section-container">
 
                 <ul>
-                    <img src="img/logo.png" alt="Logo Rolê Top" title="Logo" width="20%">
+                    <img src="/img/logo.png" alt="Logo Rolê Top" title="Logo" width="20%">
                 <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
                     <li id="bt-mobile-menu"><a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></a></li>
                 <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#sobre'>Sobre</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Home")#localizacao'>Localização</a></li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Convites")'>Convites</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index", "Galeria")'>Galeria</a></li>
 
                     @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
@@ -63,7 +77,7 @@
                     else
                     {
                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li>
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Eventos Agendados</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Pedido" asp-action="Index">Agendar Evento</a></li>
                     }
                 </ul>
             </div>

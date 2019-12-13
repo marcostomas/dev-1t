@@ -1,0 +1,49 @@
+@model RoletopMVC.ViewModels.PedidoViewModel
+    
+<main>
+    <section class="formulario">
+        <h2>Bem-Vindo, @Model.NomeUsuario </h2>
+        
+        <h2>Agendar Evento</h2><br />
+        <form method="POST" action='@Url.Action("Registrar","Pedido")'>
+            <div class="form-box">
+                <label for="nomeEvento"> Nome do Evento</label>
+                <br />
+                <input id="nomeEvento" type="text" maxlength="60" minlength="3" name="nomeEvento">
+            </div>
+
+            <div class="form-box">
+                <label for="dataEvento"> Data do Evento</label>
+                <br />
+                <input id="dataEvento" type="date" name="dataEvento" />
+            </div>
+
+            <div class="form-box">
+                <label for="horaEvento"> Hora de Início</label>
+                <br />
+                <input id="horaEvento" type="time" name="horaEvento">
+            </div>
+
+            <div class="form-box">
+                <label for="observacoes"> Observações</label>
+                <br />
+                <input id="observacoes" type="text" name="observacoes"/>
+            </div>
+            <div class="option-box">
+                <label for="tipoEvento"> Tipo de Evento</label>
+                <select id="tipoEvento" name="tipoEvento" required>
+
+                    <option value="" disabled selected>Selecione</option>
+
+                    @foreach (var e in Model.Evento)
+                    {
+                        <option value=@e.Nome> @e.Nome </option>
+                    }
+                </select>
+            </div>
+            <div class="enter">
+                <input type="submit" value="Enviar!">
+            </div>
+        </form>
+    </section>
+</main>
