@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\RoletopMVC.csproj",
+  "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\RoletopMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,83 +2961,83 @@
   "RootNamespace": "RoletopMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\Erro.cshtml",
-      "TargetPath": "Views\\Shared\\Erro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Cliente\\Historico.cshtml",
-      "TargetPath": "Views\\Cliente\\Historico.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
       "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Pedido\\Index.cshtml",
-      "TargetPath": "Views\\Pedido\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Galeria\\Index.cshtml",
-      "TargetPath": "Views\\Galeria\\Index.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Shared\\Sucesso.cshtml",
-      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Administrador\\Dashboard.cshtml",
-      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Cadastro\\Index.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\44036901818\\Desktop\\Roletop (CERTO) 2\\RoletopMVC\\Views\\Cliente\\Login.cshtml",
-      "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Pedido\\Index.cshtml",
+      "TargetPath": "Views\\Pedido\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Galeria\\Index.cshtml",
+      "TargetPath": "Views\\Galeria\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\44036901818\\Documents\\1º Termo\\dev-1t\\SPRINT 4\\RoletopMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
       "FileKind": "mvc"
     }
   ],
